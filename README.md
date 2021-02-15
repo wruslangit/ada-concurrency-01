@@ -20,5 +20,5 @@ Ada provides for the direct programming of parallel activities. Within an Ada pr
 
 # Ada Tasking Model
 
-To add figure
+![](figures/task-states.jpg)
 
