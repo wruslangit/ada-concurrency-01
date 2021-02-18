@@ -1,0 +1,31 @@
+Summary of SPARK analysis
+=========================
+
+-----------------------------------------------------------------------------------------
+SPARK Analysis results        Total      Flow   CodePeer   Provers   Justified   Unproved
+-----------------------------------------------------------------------------------------
+Data Dependencies                 .         .          .         .           .          .
+Flow Dependencies                 .         .          .         .           .          .
+Initialization                    .         .          .         .           .          .
+Non-Aliasing                      .         .          .         .           .          .
+Run-time Checks                   .         .          .         .           .          .
+Assertions                        .         .          .         .           .          .
+Functional Contracts              .         .          .         .           .          .
+LSP Verification                  .         .          .         .           .          .
+Termination                       .         .          .         .           .          .
+Concurrency                       .         .          .         .           .          .
+-----------------------------------------------------------------------------------------
+Total                             .         .          .         .           .          .
+
+
+max steps used for successful proof: 0
+
+Analyzed 2 units
+in unit main_ada_tasks_01, 1 subprograms and packages out of 1 analyzed
+  main_ada_tasks_01 at main_ada_tasks_01.adb:5 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+in unit pkg_ada_dtstamp, 0 subprograms and packages out of 5 analyzed
+  pkg_ada_dtstamp at pkg_ada_dtstamp.ads:10 skipped
+  pkg_ada_dtstamp.GetTime at pkg_ada_dtstamp.adb:61 skipped
+  pkg_ada_dtstamp.dtstamp at pkg_ada_dtstamp.ads:17 skipped
+  pkg_ada_dtstamp.get_datestamp at pkg_ada_dtstamp.ads:18 skipped
+  pkg_ada_dtstamp.get_timestamp at pkg_ada_dtstamp.ads:19 skipped

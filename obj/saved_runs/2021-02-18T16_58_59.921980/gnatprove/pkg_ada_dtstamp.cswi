@@ -1,0 +1,7 @@
+20210218085859
+-c
+-x
+ada
+-gnatA
+-gnatc
+-gnates=/home/wruslan/github/ada-concurrent-01/obj/gnatprove/31a8c7b8.tmp

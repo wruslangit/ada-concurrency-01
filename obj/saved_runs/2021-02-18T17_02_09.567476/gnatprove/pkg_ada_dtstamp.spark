@@ -1,0 +1,151 @@
+{
+  "spark": [
+    {
+      "name": "pkg_ada_dtstamp",
+      "sloc": [
+        {
+          "file": "pkg_ada_dtstamp.ads",
+          "line": 10
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "pkg_ada_dtstamp.dtstamp",
+      "sloc": [
+        {
+          "file": "pkg_ada_dtstamp.ads",
+          "line": 17
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "pkg_ada_dtstamp.get_datestamp",
+      "sloc": [
+        {
+          "file": "pkg_ada_dtstamp.ads",
+          "line": 18
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "pkg_ada_dtstamp.get_timestamp",
+      "sloc": [
+        {
+          "file": "pkg_ada_dtstamp.ads",
+          "line": 19
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "pkg_ada_dtstamp.RTdelay_sec",
+      "sloc": [
+        {
+          "file": "pkg_ada_dtstamp.ads",
+          "line": 21
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "pkg_ada_dtstamp.RTdelay_msec",
+      "sloc": [
+        {
+          "file": "pkg_ada_dtstamp.ads",
+          "line": 22
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "pkg_ada_dtstamp.RTdelay_usec",
+      "sloc": [
+        {
+          "file": "pkg_ada_dtstamp.ads",
+          "line": 23
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "pkg_ada_dtstamp.RTdelay_nsec",
+      "sloc": [
+        {
+          "file": "pkg_ada_dtstamp.ads",
+          "line": 24
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "pkg_ada_dtstamp.looptest10_RTdelay_sec",
+      "sloc": [
+        {
+          "file": "pkg_ada_dtstamp.ads",
+          "line": 26
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "pkg_ada_dtstamp.looptest10_RTdelay_msec",
+      "sloc": [
+        {
+          "file": "pkg_ada_dtstamp.ads",
+          "line": 27
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "pkg_ada_dtstamp.looptest10_RTdelay_usec",
+      "sloc": [
+        {
+          "file": "pkg_ada_dtstamp.ads",
+          "line": 28
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "pkg_ada_dtstamp.looptest10_RTdelay_nsec",
+      "sloc": [
+        {
+          "file": "pkg_ada_dtstamp.ads",
+          "line": 29
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "pkg_ada_dtstamp.GetTime",
+      "sloc": [
+        {
+          "file": "pkg_ada_dtstamp.adb",
+          "line": 61
+        }
+      ],
+      "spark": "no"
+    }
+  ],
+  "flow": [
+  ],
+  "session_map": {
+  },
+  "proof": [
+  ],
+  "assumptions": [
+  ],
+  "timings": {
+    "codepeer results": 7.00000009601354E-06,
+    "init_why_sections": 2.84999987343326E-04,
+    "globals/properties (advanced)": 1.15329995751381E-02,
+    "flow analysis": 3.07000009343028E-04,
+    "marking": 1.52470003813505E-02,
+    "translation of standard": 3.52800008840859E-03,
+    "globals (basic)": 8.12199991196394E-03
+  }
+}

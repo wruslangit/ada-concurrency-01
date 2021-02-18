@@ -1,0 +1,228 @@
+'2021-02-18T16:50:39.975428':
+  category: GNATprove
+  files:
+  - /home/wruslan/github/ada-concurrent-01/obj/gnatprove
+  label: Basic Prove All
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in /home/wruslan/github/ada-concurrent-01/obj/gnatprove/gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2021-02-18T16:50:39.975428'
+'2021-02-18T16:56:05.908716':
+  category: GNATprove
+  files:
+  - /home/wruslan/github/ada-concurrent-01/obj/gnatprove
+  label: Examine All Sources
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: analysis of data and information flow ...
+
+    pkg_ada_dtstamp.adb:78:39: volatile function call as actual is not allowed in
+    SPARK (SPARK RM 7.1.3(10))
+
+    pkg_ada_dtstamp.adb:78:39: violation of aspect SPARK_Mode at line 34
+
+    pkg_ada_dtstamp.adb:79:25: volatile function call as actual is not allowed in
+    SPARK (SPARK RM 7.1.3(10))
+
+    pkg_ada_dtstamp.adb:79:25: violation of aspect SPARK_Mode at line 34
+
+    pkg_ada_dtstamp.adb:90:72: volatile function call as actual is not allowed in
+    SPARK (SPARK RM 7.1.3(10))
+
+    pkg_ada_dtstamp.adb:90:72: violation of aspect SPARK_Mode at line 34
+
+    pkg_ada_dtstamp.adb:105:71: volatile function call as actual is not allowed in
+    SPARK (SPARK RM 7.1.3(10))
+
+    pkg_ada_dtstamp.adb:105:71: violation of aspect SPARK_Mode at line 34
+
+    pkg_ada_dtstamp.adb:107:60: volatile function call as actual is not allowed in
+    SPARK (SPARK RM 7.1.3(10))
+
+    pkg_ada_dtstamp.adb:107:60: violation of aspect SPARK_Mode at line 34
+
+    pkg_ada_dtstamp.adb:118:17: volatile function call as actual is not allowed in
+    SPARK (SPARK RM 7.1.3(10))
+
+    pkg_ada_dtstamp.adb:118:17: violation of aspect SPARK_Mode at line 34
+
+    pkg_ada_dtstamp.adb:127:17: volatile function call as actual is not allowed in
+    SPARK (SPARK RM 7.1.3(10))
+
+    pkg_ada_dtstamp.adb:127:17: violation of aspect SPARK_Mode at line 34
+
+    pkg_ada_dtstamp.adb:136:17: volatile function call as actual is not allowed in
+    SPARK (SPARK RM 7.1.3(10))
+
+    pkg_ada_dtstamp.adb:136:17: violation of aspect SPARK_Mode at line 34
+
+    pkg_ada_dtstamp.adb:145:17: volatile function call as actual is not allowed in
+    SPARK (SPARK RM 7.1.3(10))
+
+    pkg_ada_dtstamp.adb:145:17: violation of aspect SPARK_Mode at line 34
+
+    pkg_ada_dtstamp.adb:158:42: volatile function call as actual is not allowed in
+    SPARK (SPARK RM 7.1.3(10))
+
+    pkg_ada_dtstamp.adb:158:42: violation of aspect SPARK_Mode at line 34
+
+    pkg_ada_dtstamp.adb:159:33: volatile function call as actual is not allowed in
+    SPARK (SPARK RM 7.1.3(10))
+
+    pkg_ada_dtstamp.adb:159:33: violation of aspect SPARK_Mode at line 34
+
+    pkg_ada_dtstamp.adb:160:20: volatile function call as actual is not allowed in
+    SPARK (SPARK RM 7.1.3(10))
+
+    pkg_ada_dtstamp.adb:160:20: violation of aspect SPARK_Mode at line 34
+
+    pkg_ada_dtstamp.adb:174:42: volatile function call as actual is not allowed in
+    SPARK (SPARK RM 7.1.3(10))
+
+    pkg_ada_dtstamp.adb:174:42: violation of aspect SPARK_Mode at line 34
+
+    pkg_ada_dtstamp.adb:175:33: volatile function call as actual is not allowed in
+    SPARK (SPARK RM 7.1.3(10))
+
+    pkg_ada_dtstamp.adb:175:33: violation of aspect SPARK_Mode at line 34
+
+    pkg_ada_dtstamp.adb:176:20: volatile function call as actual is not allowed in
+    SPARK (SPARK RM 7.1.3(10))
+
+    pkg_ada_dtstamp.adb:176:20: violation of aspect SPARK_Mode at line 34
+
+    pkg_ada_dtstamp.adb:189:42: volatile function call as actual is not allowed in
+    SPARK (SPARK RM 7.1.3(10))
+
+    pkg_ada_dtstamp.adb:189:42: violation of aspect SPARK_Mode at line 34
+
+    pkg_ada_dtstamp.adb:190:34: volatile function call as actual is not allowed in
+    SPARK (SPARK RM 7.1.3(10))
+
+    pkg_ada_dtstamp.adb:190:34: violation of aspect SPARK_Mode at line 34
+
+    pkg_ada_dtstamp.adb:191:20: volatile function call as actual is not allowed in
+    SPARK (SPARK RM 7.1.3(10))
+
+    pkg_ada_dtstamp.adb:191:20: violation of aspect SPARK_Mode at line 34
+
+    pkg_ada_dtstamp.adb:204:43: volatile function call as actual is not allowed in
+    SPARK (SPARK RM 7.1.3(10))
+
+    pkg_ada_dtstamp.adb:204:43: violation of aspect SPARK_Mode at line 34
+
+    pkg_ada_dtstamp.adb:205:33: volatile function call as actual is not allowed in
+    SPARK (SPARK RM 7.1.3(10))
+
+    pkg_ada_dtstamp.adb:205:33: violation of aspect SPARK_Mode at line 34
+
+    pkg_ada_dtstamp.adb:206:20: volatile function call as actual is not allowed in
+    SPARK (SPARK RM 7.1.3(10))
+
+    pkg_ada_dtstamp.adb:206:20: violation of aspect SPARK_Mode at line 34
+
+    gnatprove: error during analysis of data and information flow
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2021-02-18T16:56:05.908716'
+'2021-02-18T16:58:59.921980':
+  category: GNATprove
+  files:
+  - /home/wruslan/github/ada-concurrent-01/obj/gnatprove
+  label: Basic Prove All
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in /home/wruslan/github/ada-concurrent-01/obj/gnatprove/gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2021-02-18T16:58:59.921980'
+'2021-02-18T17:02:09.567476':
+  category: GNATprove
+  files:
+  - /home/wruslan/github/ada-concurrent-01/obj/gnatprove
+  label: Basic Prove All
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    pkg_ada_dtstamp.adb:78:39: volatile function call as actual is not allowed in
+    SPARK (SPARK RM 7.1.3(10))
+
+    pkg_ada_dtstamp.adb:78:39: violation of aspect SPARK_Mode at line 34
+
+    pkg_ada_dtstamp.adb:79:25: volatile function call as actual is not allowed in
+    SPARK (SPARK RM 7.1.3(10))
+
+    pkg_ada_dtstamp.adb:79:25: violation of aspect SPARK_Mode at line 34
+
+    pkg_ada_dtstamp.adb:90:72: volatile function call as actual is not allowed in
+    SPARK (SPARK RM 7.1.3(10))
+
+    pkg_ada_dtstamp.adb:90:72: violation of aspect SPARK_Mode at line 34
+
+    pkg_ada_dtstamp.adb:105:71: volatile function call as actual is not allowed in
+    SPARK (SPARK RM 7.1.3(10))
+
+    pkg_ada_dtstamp.adb:105:71: violation of aspect SPARK_Mode at line 34
+
+    pkg_ada_dtstamp.adb:107:60: volatile function call as actual is not allowed in
+    SPARK (SPARK RM 7.1.3(10))
+
+    pkg_ada_dtstamp.adb:107:60: violation of aspect SPARK_Mode at line 34
+
+    gnatprove: error during flow analysis and proof
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2021-02-18T17:02:09.567476'
+'2021-02-18T17:09:52.292432':
+  category: GNATprove
+  files:
+  - /home/wruslan/github/ada-concurrent-01/obj/gnatprove
+  label: Examine All
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: analysis of data and information flow ...
+
+    Summary logged in /home/wruslan/github/ada-concurrent-01/obj/gnatprove/gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2021-02-18T17:09:52.292432'
+'2021-02-18T17:10:00.362690':
+  category: GNATprove
+  files:
+  - /home/wruslan/github/ada-concurrent-01/obj/gnatprove
+  label: Basic Prove All Sources
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in /home/wruslan/github/ada-concurrent-01/obj/gnatprove/gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2021-02-18T17:10:00.362690'
+'2021-02-18T17:10:29.075307':
+  category: GNATprove
+  files:
+  - /home/wruslan/github/ada-concurrent-01/obj/gnatprove
+  label: Basic Prove Line
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in /home/wruslan/github/ada-concurrent-01/obj/gnatprove/gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2021-02-18T17:10:29.075307'
