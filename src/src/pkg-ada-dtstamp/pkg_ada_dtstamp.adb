@@ -109,6 +109,24 @@ is
          return (timestring);
 	 end get_timestamp; 
   
+   -- ====================================================
+   -- (4) EXECUTE DELAY UNTIL
+   -- ====================================================
+    procedure execute_delay_until(Interval : ART.Time_Span) is
+  		Start, Finish : ART.Time; 
+  		
+    begin
+       Start  := ART.Clock;
+       dtstamp; 
+       ATIO.New_Line;
+        
+         
+       Finish  := ART.Clock; 
+       dtstamp;
+       ATIO.New_Line;
+	end execute_delay_until; 
+  
+  
    
 -- ========================================================
 begin

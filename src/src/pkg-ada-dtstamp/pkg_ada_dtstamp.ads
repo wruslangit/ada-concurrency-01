@@ -17,7 +17,9 @@ is
    procedure dtstamp;
    function  get_datestamp (RTNow : in AART.Time) return AASU.Unbounded_String;
    function  get_timestamp (RTNow : in AART.Time) return AASU.Unbounded_String;
-    
+   
+   procedure execute_delay_until(Interval : AART.Time_Span);
+     
 -- ======================================================== 
 end pkg_ada_dtstamp;
 

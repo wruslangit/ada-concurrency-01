@@ -1,0 +1,51 @@
+with Ada.Real_Time; 
+
+-- function To_Duration (Ts : Time_Span) return Duration;
+-- function To_Time_Span (D : Duration) return Time_Span;
+
+-- function Nanoseconds (NS: Integer) return Time_Span;
+-- function Microseconds (US: Integer) return Time_Span;
+-- function Milliseconds (MS: Integer) return Time_Span;
+
+
+-- The delay until formulation does not suffer from this problem, and it can be used
+-- with time values from either clock package.
+-- As with delay, delay until is accurate only in its lower bound. The task involved
+-- will not be released before the current time has reached that specified in the statement, 
+-- but it may be released later.
+-- Ada also defines delay primitives that allow a task to delay itself
+-- for an absolute or relative period of time.
+
+-- Support for concurrency is essential in a modern programming language in order 
+-- to support both the construction of parallel algorithms and the development
+-- of complex real-time embedded systems.
+
+-- PURPOSE: Tests if some sequence of statements executes within 1.7 seconds:
+procedure check_overrun is
+
+    package ART renames Ada.Real_Time;
+
+declare
+    Start, Finish : ART.Time; 
+    -- Interval   : ART.Time_Span := To_Time_Span(1.7);
+    -- Interval   : ART.Time_Span := Milliseconds(1_700);
+    Interval      : ART.Time_Span := Nanoseconds(1_700_000);
+begin
+    
+    Start  := ART.Clock;
+    
+    -- sequence of statements.
+    First_Action;
+    delay until (Start + 10.0);
+    Second_Action;
+    
+    Finish := ART.Clock;
+    
+    -- a user-defined exception to catch overrun.
+    if (Finish - Start) > Interval then
+        raise Overrun_Error; 
+    end if;
+
+end check_overrun;
+
+

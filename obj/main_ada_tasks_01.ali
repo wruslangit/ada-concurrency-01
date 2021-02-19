@@ -6,11 +6,13 @@ A -march=x86-64
 P ZX
 
 RN
+RV NO_FIXED_POINT
 RV NO_IO
 RV NO_IMPLEMENTATION_PRAGMAS
 
-U main_ada_tasks_01%b	main_ada_tasks_01.adb	2080d3a1 NE OO SU IL
+U main_ada_tasks_01%b	main_ada_tasks_01.adb	e792cab4 NE OO SU IL
 W ada%s			ada.ads			ada.ali
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 W pkg_ada_dtstamp%s	pkg_ada_dtstamp.adb	pkg_ada_dtstamp.ali
 
@@ -31,8 +33,8 @@ D a-unccon.ads		20200312110721 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20200312110721 5ab55268 interfaces%s
 D i-c.ads		20200312110721 5421119b interfaces.c%s
 D i-cstrea.ads		20200312110721 e53d8b8e interfaces.c_streams%s
-D main_ada_tasks_01.adb	20210218085029 36523dc5 main_ada_tasks_01%b
-D pkg_ada_dtstamp.ads	20210218090202 9ecf5d3e pkg_ada_dtstamp%s
+D main_ada_tasks_01.adb	20210219064617 cc7a7c05 main_ada_tasks_01%b
+D pkg_ada_dtstamp.ads	20210219064007 a1b5f998 pkg_ada_dtstamp%s
 D system.ads		20200312110721 4635ec04 system%s
 D s-atacco.ads		20200312110721 4c36d12f system.address_to_access_conversions%s
 D s-atocou.ads		20200312110721 b45c2d8d system.atomic_counters%s
@@ -63,17 +65,24 @@ D s-traent.ads		20200312110721 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20200312110721 34867c83 system.unsigned_types%s
 D s-wchcon.ads		20200312110721 1b7d22d2 system.wch_con%s
 X 1 ada.ads
-16K9*Ada 20e8 18|1r6 10r28
+16K9*Ada 20e8 18|1r6 3r6 11r28 13r28
+X 7 a-reatim.ads
+39K13*Real_Time 185e18 18|3w10 13r32
+54O9*Time_Span<duration> 18|15r20
+112V13*To_Time_Span{54O9} 18|15s37
 X 13 a-textio.ads
-49K13*Text_IO 471e16 18|1w10 10r32
-263U14*Put_Line 18|16s9 17s9 22s9
+49K13*Text_IO 471e16 18|1w10 11r32
+263U14*Put_Line 18|19s9 20s9 25s9
 X 18 main_ada_tasks_01.adb
-5U11*main_ada_tasks_01 5b11 25l5 25t22
-10K12 ATIO=10:32 16r4 17r4 22r4
-11K12 PADTS=11:28 15r4 21r4
+6U11*main_ada_tasks_01 6b11 28l5 28t22
+11K12 ATIO=11:32 19r4 20r4 25r4
+12K12 PADTS=12:28 18r4 22r4 24r4
+13K12 ART=13:32 15r16 15r33
+15o4 the_delay{7|54O9} 22r31
 X 19 pkg_ada_dtstamp.ads
-10K9*pkg_ada_dtstamp 18|2w6 11r28 19|22e20
-17U14*dtstamp 18|15s10 21s10
+10K9*pkg_ada_dtstamp 18|2w6 12r28 19|24e20
+17U14*dtstamp 18|18s10 24s10
+21U14*execute_delay_until 18|22s10
 X 36 s-stausa.ads
 203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
 268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
