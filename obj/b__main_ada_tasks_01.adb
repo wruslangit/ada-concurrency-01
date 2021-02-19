@@ -27,10 +27,10 @@ package body ada_main is
    E143 : Short_Integer; pragma Import (Ada, E143, "system__finalization_root_E");
    E141 : Short_Integer; pragma Import (Ada, E141, "ada__finalization_E");
    E140 : Short_Integer; pragma Import (Ada, E140, "system__file_io_E");
-   E188 : Short_Integer; pragma Import (Ada, E188, "system__storage_pools_E");
-   E184 : Short_Integer; pragma Import (Ada, E184, "system__finalization_masters_E");
-   E182 : Short_Integer; pragma Import (Ada, E182, "system__storage_pools__subpools_E");
-   E180 : Short_Integer; pragma Import (Ada, E180, "ada__strings__unbounded_E");
+   E190 : Short_Integer; pragma Import (Ada, E190, "system__storage_pools_E");
+   E186 : Short_Integer; pragma Import (Ada, E186, "system__finalization_masters_E");
+   E184 : Short_Integer; pragma Import (Ada, E184, "system__storage_pools__subpools_E");
+   E182 : Short_Integer; pragma Import (Ada, E182, "ada__strings__unbounded_E");
    E114 : Short_Integer; pragma Import (Ada, E114, "system__task_info_E");
    E106 : Short_Integer; pragma Import (Ada, E106, "system__task_primitives__operations_E");
    E148 : Short_Integer; pragma Import (Ada, E148, "ada__calendar_E");
@@ -55,21 +55,21 @@ package body ada_main is
       begin
          F1;
       end;
-      E180 := E180 - 1;
+      E182 := E182 - 1;
       declare
          procedure F2;
          pragma Import (Ada, F2, "ada__strings__unbounded__finalize_spec");
       begin
          F2;
       end;
-      E182 := E182 - 1;
+      E184 := E184 - 1;
       declare
          procedure F3;
          pragma Import (Ada, F3, "system__storage_pools__subpools__finalize_spec");
       begin
          F3;
       end;
-      E184 := E184 - 1;
+      E186 := E186 - 1;
       declare
          procedure F4;
          pragma Import (Ada, F4, "system__finalization_masters__finalize_spec");
@@ -228,14 +228,14 @@ package body ada_main is
       System.File_Io'Elab_Body;
       E140 := E140 + 1;
       System.Storage_Pools'Elab_Spec;
-      E188 := E188 + 1;
+      E190 := E190 + 1;
       System.Finalization_Masters'Elab_Spec;
       System.Finalization_Masters'Elab_Body;
-      E184 := E184 + 1;
+      E186 := E186 + 1;
       System.Storage_Pools.Subpools'Elab_Spec;
-      E182 := E182 + 1;
+      E184 := E184 + 1;
       Ada.Strings.Unbounded'Elab_Spec;
-      E180 := E180 + 1;
+      E182 := E182 + 1;
       System.Task_Info'Elab_Spec;
       E114 := E114 + 1;
       System.Task_Primitives.Operations'Elab_Body;

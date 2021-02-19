@@ -115,15 +115,20 @@ is
     procedure execute_delay_until(Interval : ART.Time_Span) is
   		Start, Finish : ART.Time; 
   		
+      -- As with delay, delay until is accurate only in its lower bound. 
+      -- The task involved will not be released before the current time has 
+      -- reached that specified in the statement, but it may be released later.
+            
     begin
        Start  := ART.Clock;
-       dtstamp; 
-       ATIO.New_Line;
+       dtstamp; ATIO.Put_Line("Started");
         
-         
+      delay until (Start + Interval);
+      ATIO.Put_Line("delay until (start + interval)");
+      
        Finish  := ART.Clock; 
-       dtstamp;
-       ATIO.New_Line;
+       dtstamp; ATIO.Put_Line("Finished");
+      
 	end execute_delay_until; 
   
   

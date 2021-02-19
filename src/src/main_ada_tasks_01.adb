@@ -12,7 +12,7 @@ is
    package PADTS   renames pkg_ada_dtstamp;
    package ART     renames Ada.Real_Time;
    
-   the_delay : ART.Time_Span := ART.To_Time_Span(2.0);
+   the_delay : ART.Time_Span := ART.To_Time_Span(10.0);
    
 begin
    PADTS.dtstamp;
