@@ -1,0 +1,136 @@
+{
+  "spark": [
+    {
+      "name": "main_ada_tasks_01",
+      "sloc": [
+        {
+          "file": "main_ada_tasks_01.adb",
+          "line": 6
+        }
+      ],
+      "spark": "all"
+    }
+  ],
+  "flow": [
+  ],
+  "assumptions": [
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Ada.Real_Time.To_Time_Span",
+            "sloc": [
+              {
+                "file": "a-reatim.ads",
+                "line": 112
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "pkg_ada_dtstamp.dtstamp",
+            "sloc": [
+              {
+                "file": "pkg_ada_dtstamp.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "pkg_ada_dtstamp.exec_delay_msec",
+            "sloc": [
+              {
+                "file": "pkg_ada_dtstamp.ads",
+                "line": 23
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "pkg_ada_dtstamp.exec_delay_nsec",
+            "sloc": [
+              {
+                "file": "pkg_ada_dtstamp.ads",
+                "line": 25
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "pkg_ada_dtstamp.exec_delay_sec",
+            "sloc": [
+              {
+                "file": "pkg_ada_dtstamp.ads",
+                "line": 22
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "pkg_ada_dtstamp.exec_delay_time",
+            "sloc": [
+              {
+                "file": "pkg_ada_dtstamp.ads",
+                "line": 21
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "pkg_ada_dtstamp.exec_delay_usec",
+            "sloc": [
+              {
+                "file": "pkg_ada_dtstamp.ads",
+                "line": 24
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "main_ada_tasks_01",
+          "sloc": [
+            {
+              "file": "main_ada_tasks_01.adb",
+              "line": 6
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "timings": {
+    "globals/properties (advanced)": 1.33300004526973E-02,
+    "flow analysis": 1.99100002646446E-03,
+    "marking": 1.54879996553063E-02,
+    "globals (basic)": 7.69599992781878E-03
+  }
+}

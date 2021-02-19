@@ -110,29 +110,58 @@ is
 	 end get_timestamp; 
   
    -- ====================================================
-   -- (4) EXECUTE DELAY UNTIL
+   -- (4) EXECUTE DELAY UNTIL (SECONDS)
    -- ====================================================
-    procedure execute_delay_until(Interval : ART.Time_Span) is
-  		Start, Finish : ART.Time; 
+    procedure exec_delay_time (interval : ART.Time_Span) is
+  	-- Start, Finish : ART.Time; 
   		
       -- As with delay, delay until is accurate only in its lower bound. 
       -- The task involved will not be released before the current time has 
       -- reached that specified in the statement, but it may be released later.
             
     begin
-       Start  := ART.Clock;
-       dtstamp; ATIO.Put_Line("Started");
+       -- Start  := ART.Clock;
+       -- dtstamp; ATIO.Put_Line("Started");
         
-      delay until (Start + Interval);
-      ATIO.Put_Line("delay until (start + interval)");
+      delay until (ART.Clock + interval);
+            
+       -- Finish  := ART.Clock; 
+       -- dtstamp; ATIO.Put_Line("Finished");
       
-       Finish  := ART.Clock; 
-       dtstamp; ATIO.Put_Line("Finished");
-      
-	end execute_delay_until; 
-  
-  
+	end exec_delay_time; 
+ 
+ -- =====================================================
+ -- (1) ONCE-OFF DELAY SEC
+ -- =====================================================
+   procedure exec_delay_sec (sec : in Positive) is
+   begin
+       delay until ART.Clock + ART.Seconds(sec);
+   end exec_delay_sec;   
    
+ -- =====================================================
+ -- (2) ONCE-OFF DELAY MSEC
+ -- =====================================================
+   procedure exec_delay_msec (msec : in Positive) is
+   begin
+       delay until ART.Clock + ART.Milliseconds(msec);
+   end exec_delay_msec; 
+   
+ -- =====================================================
+ -- (3) ONCE-OFF DELAY USEC
+ -- =====================================================
+   procedure exec_delay_usec (usec : in Positive) is
+   begin
+       delay until ART.Clock + ART.Microseconds(usec);
+   end exec_delay_usec;   
+   
+ -- =====================================================
+ -- (4) ONCE-OFF DELAY NSEC
+ -- =====================================================
+   procedure exec_delay_nsec (nsec : in Positive) is
+   begin
+       delay until ART.Clock + ART.Nanoseconds(nsec);
+   end exec_delay_nsec; 
+    
 -- ========================================================
 begin
     null;

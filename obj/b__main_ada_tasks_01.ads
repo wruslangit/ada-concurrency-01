@@ -37,7 +37,7 @@ package ada_main is
    pragma Export (C, main, "main");
 
    type Version_32 is mod 2 ** 32;
-   u00001 : constant Version_32 := 16#189fca0c#;
+   u00001 : constant Version_32 := 16#3fbcdc6f#;
    pragma Export (C, u00001, "main_ada_tasks_01B");
    u00002 : constant Version_32 := 16#050ff2f0#;
    pragma Export (C, u00002, "system__standard_libraryB");
@@ -325,9 +325,9 @@ package ada_main is
    pragma Export (C, u00143, "system__finalization_rootS");
    u00144 : constant Version_32 := 16#bbaa76ac#;
    pragma Export (C, u00144, "system__file_control_blockS");
-   u00145 : constant Version_32 := 16#7683fb0d#;
+   u00145 : constant Version_32 := 16#8b3d784c#;
    pragma Export (C, u00145, "pkg_ada_dtstampB");
-   u00146 : constant Version_32 := 16#236dccf4#;
+   u00146 : constant Version_32 := 16#3062f988#;
    pragma Export (C, u00146, "pkg_ada_dtstampS");
    u00147 : constant Version_32 := 16#9a2e29aa#;
    pragma Export (C, u00147, "ada__calendarB");

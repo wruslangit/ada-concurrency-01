@@ -18,8 +18,12 @@ is
    function  get_datestamp (RTNow : in AART.Time) return AASU.Unbounded_String;
    function  get_timestamp (RTNow : in AART.Time) return AASU.Unbounded_String;
    
-   procedure execute_delay_until(Interval : AART.Time_Span);
-     
+   procedure exec_delay_time (interval : AART.Time_Span); -- REAL SECONDS
+   procedure exec_delay_sec  (sec  : in Positive);  -- INTEGER
+   procedure exec_delay_msec (msec : in Positive);
+   procedure exec_delay_usec (usec : in Positive);
+   procedure exec_delay_nsec (nsec : in Positive);
+   
 -- ======================================================== 
 end pkg_ada_dtstamp;
 

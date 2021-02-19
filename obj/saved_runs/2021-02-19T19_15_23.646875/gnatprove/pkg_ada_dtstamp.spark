@@ -1,0 +1,114 @@
+{
+  "spark": [
+    {
+      "name": "pkg_ada_dtstamp",
+      "sloc": [
+        {
+          "file": "pkg_ada_dtstamp.ads",
+          "line": 10
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "pkg_ada_dtstamp.dtstamp",
+      "sloc": [
+        {
+          "file": "pkg_ada_dtstamp.ads",
+          "line": 17
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "pkg_ada_dtstamp.get_datestamp",
+      "sloc": [
+        {
+          "file": "pkg_ada_dtstamp.ads",
+          "line": 18
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "pkg_ada_dtstamp.get_timestamp",
+      "sloc": [
+        {
+          "file": "pkg_ada_dtstamp.ads",
+          "line": 19
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "pkg_ada_dtstamp.exec_delay_time",
+      "sloc": [
+        {
+          "file": "pkg_ada_dtstamp.ads",
+          "line": 21
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "pkg_ada_dtstamp.exec_delay_sec",
+      "sloc": [
+        {
+          "file": "pkg_ada_dtstamp.ads",
+          "line": 22
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "pkg_ada_dtstamp.exec_delay_msec",
+      "sloc": [
+        {
+          "file": "pkg_ada_dtstamp.ads",
+          "line": 23
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "pkg_ada_dtstamp.exec_delay_usec",
+      "sloc": [
+        {
+          "file": "pkg_ada_dtstamp.ads",
+          "line": 24
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "pkg_ada_dtstamp.exec_delay_nsec",
+      "sloc": [
+        {
+          "file": "pkg_ada_dtstamp.ads",
+          "line": 25
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "pkg_ada_dtstamp.GetTime",
+      "sloc": [
+        {
+          "file": "pkg_ada_dtstamp.adb",
+          "line": 61
+        }
+      ],
+      "spark": "no"
+    }
+  ],
+  "flow": [
+  ],
+  "assumptions": [
+  ],
+  "timings": {
+    "globals/properties (advanced)": 2.17150002717972E-02,
+    "flow analysis": 5.23999973665923E-04,
+    "marking": 1.60809997469187E-02,
+    "globals (basic)": 1.57122999429703E-01
+  }
+}

@@ -21,7 +21,7 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_ELABORATION_CODE
 RV SPARK_05
 
-U pkg_ada_dtstamp%b	pkg_ada_dtstamp.adb	7683fb0d OO PK IL
+U pkg_ada_dtstamp%b	pkg_ada_dtstamp.adb	8b3d784c OO PK IL
 W ada%s			ada.ads			ada.ali
 W ada.calendar%s	a-calend.adb		a-calend.ali
 W ada.calendar.formatting%s  a-calfor.adb	a-calfor.ali
@@ -44,7 +44,7 @@ Z system.soft_links%s	s-soflin.adb		s-soflin.ali
 Z system.standard_library%s  s-stalib.adb	s-stalib.ali
 Z system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
 
-U pkg_ada_dtstamp%s	pkg_ada_dtstamp.ads	236dccf4 EE NE OO PK IL
+U pkg_ada_dtstamp%s	pkg_ada_dtstamp.ads	3062f988 EE NE OO PK IL
 W ada%s			ada.ads			ada.ali
 W ada.real_time%s	a-reatim.adb		a-reatim.ali
 W ada.strings%s		a-string.ads		a-string.ali
@@ -76,8 +76,8 @@ D a-unccon.ads		20200312110721 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20200312110721 5ab55268 interfaces%s
 D i-c.ads		20200312110721 5421119b interfaces.c%s
 D i-cstrea.ads		20200312110721 e53d8b8e interfaces.c_streams%s
-D pkg_ada_dtstamp.ads	20210219064007 a1b5f998 pkg_ada_dtstamp%s
-D pkg_ada_dtstamp.adb	20210219074029 5a8c0679 pkg_ada_dtstamp%b
+D pkg_ada_dtstamp.ads	20210219105506 b2bacce4 pkg_ada_dtstamp%s
+D pkg_ada_dtstamp.adb	20210219111606 b43db044 pkg_ada_dtstamp%b
 D system.ads		20200312110721 4635ec04 system%s
 D s-atacco.ads		20200312110721 4c36d12f system.address_to_access_conversions%s
 D s-atocou.ads		20200312110721 b45c2d8d system.atomic_counters%s
@@ -129,15 +129,15 @@ X 7 a-comlin.ads
 36K13*Command_Line 144e21 28|30w10 49r31
 X 11 a-reatim.ads
 39K13*Real_Time 185e18 27|6w10 6r37 14r29 28|20w10 20r29 41r31
-49O9*Time<duration> 27|18r45 19r45 28|56r34 61r34 85r40 98r40 116r37
-54O9*Time_Span<duration> 27|21r50 28|52r28 53r28 54r28 55r28 63r29 115r50
-61V13*Clock{49O9} 28|56s52 79s29 107s64 123s22 129s23
-65V14*"+"{49O9} 28|126s26
+49O9*Time<duration> 27|18r45 19r45 28|56r34 61r34 85r40 98r40
+54O9*Time_Span<duration> 27|21r47 28|52r28 53r28 54r28 55r28 63r29 115r47
+61V13*Clock{49O9} 28|56s52 79s29 107s64 126s24 138s24 146s24 154s24 162s24
+65V14*"+"{49O9} 28|126s30 138s30 146s30 154s30 162s30
 110V13*To_Duration{duration} 28|67s61
-115V13*Nanoseconds{54O9} 28|55s46
-117V13*Microseconds{54O9} 28|54s46
-119V13*Milliseconds{54O9} 28|53s46
-122V13*Seconds{54O9} 28|52s46
+115V13*Nanoseconds{54O9} 28|55s46 162s36
+117V13*Microseconds{54O9} 28|54s46 154s36
+119V13*Milliseconds{54O9} 28|53s46 146s36
+122V13*Seconds{54O9} 28|52s46 138s36
 130I9*Seconds_Count<long_long_integer> 28|62r29
 139U14*Split 28|65s18
 X 14 a-string.ads
@@ -159,25 +159,32 @@ X 20 a-suteio.ads
 X 22 a-textio.ads
 49K13*Text_IO 471e16 28|16w10 38r31
 242U14*Put 28|78s12 79s12
-263U14*Put_Line 28|124s22 127s12 130s22
 X 27 pkg_ada_dtstamp.ads
-10K9*pkg_ada_dtstamp 24l5 24e20 28|33b14 140l5 140t20
-14K12*AART=14:29 18r40 19r40 21r45
+10K9*pkg_ada_dtstamp 28l5 28e20 28|33b14 169l5 169t20
+14K12*AART=14:29 18r40 19r40 21r42
 15K12*AASU=15:37 18r58 19r58
-17U14*dtstamp 28|76b15 80l13 80t20 124s8 130s8
+17U14*dtstamp 28|76b15 80l13 80t20
 18V14*get_datestamp{19|79R9} 18>29 28|85b14 93l14 93t27
 18o29 RTNow{11|49O9} 28|85b28
 19V14*get_timestamp{19|79R9} 19>29 28|98b14 110l14 110t27
 19o29 RTNow{11|49O9} 28|98b28
-21U14*execute_delay_until 21>34 28|115b15 132l13 132t32
-21o34 Interval{11|54O9} 28|115b35 126r28
+21U14*exec_delay_time 21>31 28|115b15 131l13 131t28
+21o31 interval{11|54O9} 28|115b32 126r32
+22U14*exec_delay_sec 22>31 28|136b14 139l8 139t22
+22i31 sec{positive} 28|136b30 138r44
+23U14*exec_delay_msec 23>31 28|144b14 147l8 147t23
+23i31 msec{positive} 28|144b31 146r49
+24U14*exec_delay_usec 24>31 28|152b14 155l8 155t23
+24i31 usec{positive} 28|152b31 154r49
+25U14*exec_delay_nsec 25>31 28|160b14 163l8 163t23
+25i31 nsec{positive} 28|160b31 162r48
 X 28 pkg_ada_dtstamp.adb
-38K12 ATIO=38:31 78r7 79r7 124r17 127r7 130r17
+38K12 ATIO=38:31 78r7 79r7
 39K12 ACal=39:31 78r17 78r39 90r49 90r72 105r48 105r71
 40K12 ACalF=40:40
 41K12 ART=41:31 52r24 52r42 53r24 53r42 54r24 54r42 55r24 55r42 56r30 56r48
-. 61r30 62r25 63r25 65r14 67r57 79r25 85r36 98r36 107r60 115r46 116r33 123r18
-. 129r19
+. 61r30 62r25 63r25 65r14 67r57 79r25 85r36 98r36 107r60 115r43 126r20 138r20
+. 138r32 146r20 146r32 154r20 154r32 162r20 162r32
 44K12 AS=44:31
 45K12 ASF=45:39
 46K12 ASB=46:39
@@ -201,8 +208,6 @@ X 28 pkg_ada_dtstamp.adb
 100r10 time_only{19|79R9} 106m10 108r24
 101r10 fraction_only{19|79R9} 107m10 108r36
 102r10 timestring{19|79R9} 108m10 109r18
-116o17 Start{11|49O9} 123m8 126r20
-116o24 Finish{11|49O9} 129m8
 X 29 system.ads
 67M9*Address
 X 40 s-memory.ads
