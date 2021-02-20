@@ -161,7 +161,33 @@ is
    begin
        delay until ART.Clock + ART.Nanoseconds(nsec);
    end exec_delay_nsec; 
-    
+   
+ -- =====================================================
+ -- (5) PROCEDURE CHECK EXECUTION OVERRUN
+ -- =====================================================   
+   procedure exec_check_overrun(the_start, the_finish : in AART.Time; the_deadline : in AART.Time_Span) is
+   begin
+         
+      ATIO.Put(" Execution duration = "); 
+      ATIO.Put_Line(Duration'Image(To_Duration(the_finish - the_start))); 
+      ATIO.Put(" Deadline  duration = "); 
+      ATIO.Put_Line(Duration'Image(To_Duration(the_deadline))); 
+      
+   end exec_check_overrun;
+   
+    -- =====================================================
+ -- (6) FUNCTION EXECUTION OVERRUN
+ -- =====================================================  
+   function exec_overrun(the_start, the_finish : in AART.Time; the_deadline : in AART.Time_Span) return Boolean is
+   begin
+      if (the_finish - the_start) > the_deadline then
+         return True; 
+      else 
+         return False; 
+      end if;
+      
+   end exec_overrun;   
+   
 -- ========================================================
 begin
     null;
