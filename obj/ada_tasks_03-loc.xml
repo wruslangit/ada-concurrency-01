@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<Locations>
+  <Project>
+    <vfs_file>/home/wruslan/github/ada-concurrent-01/ada_tasks_03.gpr</vfs_file>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/wruslan/github/ada-concurrent-01/ada_tasks_03.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/ada-concurrent-01/src/src/main_ada_tasks_03.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 41" >
+      <vfs_project>/home/wruslan/github/ada-concurrent-01/ada_tasks_03.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/ada-concurrent-01/src/src/main_ada_tasks_03.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/wruslan/github/ada-concurrent-01/ada_tasks_03.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/ada-concurrent-01/src/src/pkg-ada-dtstamp/pkg_ada_dtstamp.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 9" line=" 190" >
+      <vfs_project>/home/wruslan/github/ada-concurrent-01/ada_tasks_03.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/ada-concurrent-01/src/src/pkg-ada-dtstamp/pkg_ada_dtstamp.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/wruslan/github/ada-concurrent-01/ada_tasks_03.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/ada-concurrent-01/src/src/pkg-ada-dtstamp/pkg_ada_dtstamp.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 41" >
+      <vfs_project>/home/wruslan/github/ada-concurrent-01/ada_tasks_03.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/ada-concurrent-01/src/src/main_ada_tasks_03.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 197" >
+      <vfs_project>/home/wruslan/github/ada-concurrent-01/ada_tasks_03.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/ada-concurrent-01/src/src/pkg-ada-dtstamp/pkg_ada_dtstamp.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 10" line=" 162" >
+      <vfs_project>/home/wruslan/github/ada-concurrent-01/ada_tasks_03.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/ada-concurrent-01/src/src/pkg-ada-dtstamp/pkg_ada_dtstamp.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 54" line=" 167" >
+      <vfs_project>/home/wruslan/github/ada-concurrent-01/ada_tasks_03.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/ada-concurrent-01/src/src/pkg-ada-dtstamp/pkg_ada_dtstamp.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 50" line=" 162" >
+      <vfs_project>/home/wruslan/github/ada-concurrent-01/ada_tasks_03.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/ada-concurrent-01/src/src/pkg-ada-dtstamp/pkg_ada_dtstamp.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 10" line=" 171" >
+      <vfs_project>/home/wruslan/github/ada-concurrent-01/ada_tasks_03.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/ada-concurrent-01/src/src/pkg-ada-dtstamp/pkg_ada_dtstamp.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 183" >
+      <vfs_project>/home/wruslan/github/ada-concurrent-01/ada_tasks_03.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/ada-concurrent-01/src/src/pkg-ada-dtstamp/pkg_ada_dtstamp.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 10" line=" 171" >
+      <vfs_project>/home/wruslan/github/ada-concurrent-01/ada_tasks_03.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/ada-concurrent-01/src/src/pkg-ada-dtstamp/pkg_ada_dtstamp.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 183" >
+      <vfs_project>/home/wruslan/github/ada-concurrent-01/ada_tasks_03.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/ada-concurrent-01/src/src/pkg-ada-dtstamp/pkg_ada_dtstamp.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 26" line=" 170" >
+      <vfs_project>/home/wruslan/github/ada-concurrent-01/ada_tasks_03.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/ada-concurrent-01/src/src/pkg-ada-dtstamp/pkg_ada_dtstamp.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 179" >
+      <vfs_project>/home/wruslan/github/ada-concurrent-01/ada_tasks_03.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/ada-concurrent-01/src/src/pkg-ada-dtstamp/pkg_ada_dtstamp.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 37" line=" 170" >
+      <vfs_project>/home/wruslan/github/ada-concurrent-01/ada_tasks_03.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/ada-concurrent-01/src/src/pkg-ada-dtstamp/pkg_ada_dtstamp.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 179" >
+      <vfs_project>/home/wruslan/github/ada-concurrent-01/ada_tasks_03.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/ada-concurrent-01/src/src/pkg-ada-dtstamp/pkg_ada_dtstamp.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 51" line=" 170" >
+      <vfs_project>/home/wruslan/github/ada-concurrent-01/ada_tasks_03.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/ada-concurrent-01/src/src/pkg-ada-dtstamp/pkg_ada_dtstamp.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 54" line=" 167" >
+      <vfs_project>/home/wruslan/github/ada-concurrent-01/ada_tasks_03.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/ada-concurrent-01/src/src/pkg-ada-dtstamp/pkg_ada_dtstamp.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 51" line=" 170" >
+      <vfs_project>/home/wruslan/github/ada-concurrent-01/ada_tasks_03.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/ada-concurrent-01/src/src/pkg-ada-dtstamp/pkg_ada_dtstamp.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 10" line=" 171" >
+      <vfs_project>/home/wruslan/github/ada-concurrent-01/ada_tasks_03.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/ada-concurrent-01/src/src/pkg-ada-dtstamp/pkg_ada_dtstamp.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 160" >
+      <vfs_project>/home/wruslan/github/ada-concurrent-01/ada_tasks_03.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/ada-concurrent-01/src/src/pkg-ada-dtstamp/pkg_ada_dtstamp.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 51" line=" 170" >
+      <vfs_project>/home/wruslan/github/ada-concurrent-01/ada_tasks_03.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/ada-concurrent-01/src/src/pkg-ada-dtstamp/pkg_ada_dtstamp.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 179" >
+      <vfs_project>/home/wruslan/github/ada-concurrent-01/ada_tasks_03.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/ada-concurrent-01/src/src/pkg-ada-dtstamp/pkg_ada_dtstamp.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 37" line=" 170" >
+      <vfs_project>/home/wruslan/github/ada-concurrent-01/ada_tasks_03.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/ada-concurrent-01/src/src/pkg-ada-dtstamp/pkg_ada_dtstamp.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 183" >
+      <vfs_project>/home/wruslan/github/ada-concurrent-01/ada_tasks_03.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/ada-concurrent-01/src/src/pkg-ada-dtstamp/pkg_ada_dtstamp.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 26" line=" 170" >
+      <vfs_project>/home/wruslan/github/ada-concurrent-01/ada_tasks_03.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/ada-concurrent-01/src/src/pkg-ada-dtstamp/pkg_ada_dtstamp.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 27" line=" 184" >
+      <vfs_project>/home/wruslan/github/ada-concurrent-01/ada_tasks_03.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/ada-concurrent-01/src/src/pkg-ada-dtstamp/pkg_ada_dtstamp.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 26" line=" 170" >
+      <vfs_project>/home/wruslan/github/ada-concurrent-01/ada_tasks_03.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/ada-concurrent-01/src/src/pkg-ada-dtstamp/pkg_ada_dtstamp.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 183" >
+      <vfs_project>/home/wruslan/github/ada-concurrent-01/ada_tasks_03.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/ada-concurrent-01/src/src/pkg-ada-dtstamp/pkg_ada_dtstamp.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 37" line=" 170" >
+      <vfs_project>/home/wruslan/github/ada-concurrent-01/ada_tasks_03.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/ada-concurrent-01/src/src/pkg-ada-dtstamp/pkg_ada_dtstamp.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 183" >
+      <vfs_project>/home/wruslan/github/ada-concurrent-01/ada_tasks_03.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/ada-concurrent-01/src/src/pkg-ada-dtstamp/pkg_ada_dtstamp.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 50" line=" 170" >
+      <vfs_project>/home/wruslan/github/ada-concurrent-01/ada_tasks_03.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/ada-concurrent-01/src/src/pkg-ada-dtstamp/pkg_ada_dtstamp.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 183" >
+      <vfs_project>/home/wruslan/github/ada-concurrent-01/ada_tasks_03.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/ada-concurrent-01/src/src/pkg-ada-dtstamp/pkg_ada_dtstamp.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 39" line=" 171" >
+      <vfs_project>/home/wruslan/github/ada-concurrent-01/ada_tasks_03.gpr</vfs_project>
+      <vfs_file>/home/wruslan/github/ada-concurrent-01/src/src/pkg-ada-dtstamp/pkg_ada_dtstamp.adb</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>

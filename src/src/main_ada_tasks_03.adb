@@ -29,10 +29,13 @@ begin
    PADTS.exec_check_overrun(the_start, the_finish, the_deadline);
    
    -- Procedure test timing no overrun
-   the_deadline := ART.To_Time_Span(0.00075);
+   the_deadline := ART.To_Time_Span(0.075);
    the_start    := ART.Clock;
-       PADTS.exec_delay_time (ART.To_Time_Span(0.00025));
-       PADTS.exec_delay_time (ART.To_Time_Span(0.00014));
+   
+   for idx in 1..10 loop 
+      PADTS.exec_delay_time (ART.To_Time_Span(0.0025));      
+   end loop;   
+   
    the_finish := ART.Clock;
    PADTS.exec_check_overrun(the_start, the_finish, the_deadline);
    
