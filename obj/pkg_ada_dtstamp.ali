@@ -21,7 +21,7 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_ELABORATION_CODE
 RV SPARK_05
 
-U pkg_ada_dtstamp%b	pkg_ada_dtstamp.adb	e8be19cf OO PK IL
+U pkg_ada_dtstamp%b	pkg_ada_dtstamp.adb	75eb9fdd OO PK IL
 W ada%s			ada.ads			ada.ali
 W ada.calendar%s	a-calend.adb		a-calend.ali
 W ada.calendar.formatting%s  a-calfor.adb	a-calfor.ali
@@ -44,7 +44,7 @@ Z system.soft_links%s	s-soflin.adb		s-soflin.ali
 Z system.standard_library%s  s-stalib.adb	s-stalib.ali
 Z system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
 
-U pkg_ada_dtstamp%s	pkg_ada_dtstamp.ads	80d383ac EE NE OO PK IL
+U pkg_ada_dtstamp%s	pkg_ada_dtstamp.ads	738280fa EE NE OO PK IL
 W ada%s			ada.ads			ada.ali
 W ada.real_time%s	a-reatim.adb		a-reatim.ali
 W ada.strings%s		a-string.ads		a-string.ali
@@ -76,8 +76,8 @@ D a-unccon.ads		20200312110721 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20200312110721 5ab55268 interfaces%s
 D i-c.ads		20200312110721 5421119b interfaces.c%s
 D i-cstrea.ads		20200312110721 e53d8b8e interfaces.c_streams%s
-D pkg_ada_dtstamp.ads	20210220011216 020bb6c0 pkg_ada_dtstamp%s
-D pkg_ada_dtstamp.adb	20210220011847 670fabe3 pkg_ada_dtstamp%b
+D pkg_ada_dtstamp.ads	20210220023507 f15ab596 pkg_ada_dtstamp%s
+D pkg_ada_dtstamp.adb	20210220041141 090b2ea7 pkg_ada_dtstamp%b
 D system.ads		20200312110721 4635ec04 system%s
 D s-atacco.ads		20200312110721 4c36d12f system.address_to_access_conversions%s
 D s-atocou.ads		20200312110721 b45c2d8d system.atomic_counters%s
@@ -129,19 +129,21 @@ X 7 a-comlin.ads
 36K13*Command_Line 144e21 28|30w10 49r31
 X 11 a-reatim.ads
 39K13*Real_Time 185e18 27|6w10 6r37 14r29 28|20w10 20r29 41r31
-49O9*Time<duration> 27|18r45 19r45 27r65 28r59 28|56r34 61r34 85r40 98r40
-. 168r65 181r58
-54O9*Time_Span<duration> 27|21r47 27r94 28r88 28|52r28 53r28 54r28 55r28
-. 63r29 115r47 168r94 181r87
-61V13*Clock{49O9} 28|56s52 79s29 107s64 126s24 138s24 146s24 154s24 162s24
-65V14*"+"{49O9} 28|126s30 138s30 146s30 154s30 162s30
-71V14*"-"{54O9} 28|172s59 183s22
-105V14*">"{boolean} 28|183r35
-110V13*To_Duration{duration} 28|67s61 172s36 174s36
-115V13*Nanoseconds{54O9} 28|55s46 162s36
-117V13*Microseconds{54O9} 28|54s46 154s36
-119V13*Milliseconds{54O9} 28|53s46 146s36
-122V13*Seconds{54O9} 28|52s46 138s36
+49O9*Time<duration> 27|18r45 19r45 27r65 28r60 28|56r34 61r34 85r40 98r40
+. 159r65 189r59
+54O9*Time_Span<duration> 27|21r47 27r94 28r89 28|52r28 53r28 54r28 55r28
+. 63r29 115r47 159r94 160r26 189r88
+61V13*Clock{49O9} 28|56s52 79s29 107s64 121s24 129s24 137s24 145s24 153s24
+65V14*"+"{49O9} 28|121s30 129s30 137s30 145s30 153s30
+71V14*"-"{54O9} 28|166s62 170s37 176s62 180s37 191s22
+85V14*"-"{54O9} 28|170s50 180s50
+105V14*">"{boolean} 28|191r35
+110V13*To_Duration{duration} 28|67s61 166s39 168s39 171s39 176s39 178s39
+. 181s39
+115V13*Nanoseconds{54O9} 28|55s46 153s36
+117V13*Microseconds{54O9} 28|54s46 145s36
+119V13*Milliseconds{54O9} 28|53s46 137s36
+122V13*Seconds{54O9} 28|52s46 129s36
 130I9*Seconds_Count<long_long_integer> 28|62r29
 139U14*Split 28|65s18
 X 14 a-string.ads
@@ -162,43 +164,45 @@ X 20 a-suteio.ads
 39K31*Text_IO 61e34 28|29w28 48r49
 X 22 a-textio.ads
 49K13*Text_IO 471e16 28|16w10 38r31
-242U14*Put 28|78s12 79s12 171s12 173s12
-263U14*Put_Line 28|172s12 174s12
+166U14*New_Line 28|172s15 182s15
+242U14*Put 28|78s12 79s12 165s15 167s15 169s15 175s15 177s15 179s15
+263U14*Put_Line 28|164s15 166s15 168s15 171s15 174s15 176s15 178s15 181s15
 X 27 pkg_ada_dtstamp.ads
-10K9*pkg_ada_dtstamp 31l5 31e20 28|33b14 195l5 195t20
-14K12*AART=14:29 18r40 19r40 21r42 27r60 27r89 28r54 28r83 28|168r60 168r89
-. 181r53 181r82
+10K9*pkg_ada_dtstamp 31l5 31e20 28|33b14 203l5 203t20
+14K12*AART=14:29 18r40 19r40 21r42 27r60 27r89 28r55 28r84 28|159r60 159r89
+. 160r21 189r54 189r83
 15K12*AASU=15:37 18r58 19r58
 17U14*dtstamp 28|76b15 80l13 80t20
 18V14*get_datestamp{19|79R9} 18>29 28|85b14 93l14 93t27
 18o29 RTNow{11|49O9} 28|85b28
 19V14*get_timestamp{19|79R9} 19>29 28|98b14 110l14 110t27
 19o29 RTNow{11|49O9} 28|98b28
-21U14*exec_delay_time 21>31 28|115b15 131l13 131t28
-21o31 interval{11|54O9} 28|115b32 126r32
-22U14*exec_delay_sec 22>31 28|136b14 139l8 139t22
-22i31 sec{positive} 28|136b30 138r44
-23U14*exec_delay_msec 23>31 28|144b14 147l8 147t23
-23i31 msec{positive} 28|144b31 146r49
-24U14*exec_delay_usec 24>31 28|152b14 155l8 155t23
-24i31 usec{positive} 28|152b31 154r49
-25U14*exec_delay_nsec 25>31 28|160b14 163l8 163t23
-25i31 nsec{positive} 28|160b31 162r48
-27U14*exec_check_overrun 27>33 27>44 27>71 28|168b14 176l8 176t26
-27o33 the_start{11|49O9} 28|168b33 172r61
-27o44 the_finish{11|49O9} 28|168b44 172r48
-27o71 the_deadline{11|54O9} 28|168b71 174r48
-28V14*exec_overrun{boolean} 28>27 28>38 28>65 28|181b13 189l8 189t20
-28o27 the_start{11|49O9} 28|181b26 183r24
-28o38 the_finish{11|49O9} 28|181b37 183r11
-28o65 the_deadline{11|54O9} 28|181b64 183r37
+21U14*exec_delay_time 21>31 28|115b15 122l13 122t28
+21o31 interval{11|54O9} 28|115b32 121r32
+22U14*exec_delay_sec 22>31 28|127b14 130l8 130t22
+22i31 sec{positive} 28|127b30 129r44
+23U14*exec_delay_msec 23>31 28|135b14 138l8 138t23
+23i31 msec{positive} 28|135b31 137r49
+24U14*exec_delay_usec 24>31 28|143b14 146l8 146t23
+24i31 usec{positive} 28|143b31 145r49
+25U14*exec_delay_nsec 25>31 28|151b14 154l8 154t23
+25i31 nsec{positive} 28|151b31 153r48
+27U14*exec_check_overrun 27>33 27>44 27>71 28|159b14 184l8 184t26
+27o33 the_start{11|49O9} 28|159b33 162r24 166r64 170r39 176r64 180r39
+27o44 the_finish{11|49O9} 28|159b44 162r35 166r51 170r26 176r51 180r26
+27o71 the_deadline{11|54O9} 28|159b71 162r47 168r51 170r53 178r51 180r53
+28V14*getif_overrun{boolean} 28>28 28>39 28>66 28|162s10 189b13 197l8 197t21
+28o28 the_start{11|49O9} 28|189b27 191r24
+28o39 the_finish{11|49O9} 28|189b38 191r11
+28o66 the_deadline{11|54O9} 28|189b65 191r37
 X 28 pkg_ada_dtstamp.adb
-38K12 ATIO=38:31 78r7 79r7 171r7 172r7 173r7 174r7
+38K12 ATIO=38:31 78r7 79r7 164r10 165r10 166r10 167r10 168r10 169r10 171r10
+. 172r10 174r10 175r10 176r10 177r10 178r10 179r10 181r10 182r10
 39K12 ACal=39:31 78r17 78r39 90r49 90r72 105r48 105r71
 40K12 ACalF=40:40
 41K12 ART=41:31 52r24 52r42 53r24 53r42 54r24 54r42 55r24 55r42 56r30 56r48
-. 61r30 62r25 63r25 65r14 67r57 79r25 85r36 98r36 107r60 115r43 126r20 138r20
-. 138r32 146r20 146r32 154r20 154r32 162r20 162r32
+. 61r30 62r25 63r25 65r14 67r57 79r25 85r36 98r36 107r60 115r43 121r20 129r20
+. 129r32 137r20 137r32 145r20 145r32 153r20 153r32
 44K12 AS=44:31
 45K12 ASF=45:39
 46K12 ASB=46:39
@@ -222,6 +226,7 @@ X 28 pkg_ada_dtstamp.adb
 100r10 time_only{19|79R9} 106m10 108r24
 101r10 fraction_only{19|79R9} 107m10 108r36
 102r10 timestring{19|79R9} 108m10 109r18
+160o7 the_overrun{11|54O9} 170m10 171r51 180m10 181r51
 X 29 system.ads
 67M9*Address
 X 40 s-memory.ads

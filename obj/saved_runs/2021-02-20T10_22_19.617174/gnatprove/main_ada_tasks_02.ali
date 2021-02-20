@@ -7,13 +7,12 @@ A -gnatc
 P GP FX
 
 RN
-RV NO_DELAY
 RV NO_FIXED_POINT
 RV NO_IO
 RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_ELABORATION_CODE
 
-U main_ada_tasks_01%b	main_ada_tasks_01.adb	351e4f99 OO SU IL
+U main_ada_tasks_02%b	main_ada_tasks_02.adb	fe49e9ab OO SU IL
 W ada%s			ada.ads			ada.ali
 W ada.real_time%s	a-reatim.adb		a-reatim.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
@@ -36,7 +35,7 @@ D a-unccon.ads		20200819050643 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20200819050644 5ab55268 interfaces%s
 D i-c.ads		20200819050644 c624fa43 interfaces.c%s
 D i-cstrea.ads		20200819050644 e53d8b8e interfaces.c_streams%s
-D main_ada_tasks_01.adb	20210219233454 9ba1d047 main_ada_tasks_01%b
+D main_ada_tasks_02.adb	20210220021528 50f67675 main_ada_tasks_02%b
 D pkg_ada_dtstamp.ads	20210220011216 020bb6c0 pkg_ada_dtstamp%s
 D system.ads		20200819050647 4635ec04 system%s
 D s-atacco.ads		20200819050645 4c36d12f system.address_to_access_conversions%s
@@ -67,55 +66,37 @@ X 1 ada.ads
 16K9*Ada 20e8 17|1r6 3r6 3r25 11r28 13r28
 X 7 a-reatim.ads
 39K13*Real_Time 185e18 17|3w10 3r29 13r32
-49O9*Time<duration> 17|15r24
-54O9*Time_Span<duration>
-61V13*Clock{49O9} 17|38s18 44s18
-65V14*"+"{49O9} 17|41s23
-71V14*"-"{54O9} 17|47s15 50s54 54s54
-105V14*">"{boolean} 17|47r24
-110V13*To_Duration{duration} 17|50s36 54s36
-112V13*To_Time_Span{54O9} 17|23s31 41s29 47s30
+49O9*Time<duration> 17|15r32
+54O9*Time_Span<duration> 17|16r24
+61V13*Clock{49O9} 17|25s24 28s22 40s24 43s22
+112V13*To_Time_Span{54O9} 17|24s24 26s35 27s35 39s24
 X 12 a-textio.ads
 57K13*Text_IO 727e16 17|1w10 11r32
-465U14*Put 17|48s12 49s12 52s12 53s12
-508U14*Put_Line 17|19s9 20s9 22s24 25s24 28s24 31s24 34s24 40s9 42s9 50s12
-. 54s12 60s9
-X 17 main_ada_tasks_01.adb
-6U11*main_ada_tasks_01 6b11 63l5 63t22
-11K12 ATIO=11:32 19r4 20r4 22r19 25r19 28r19 31r19 34r19 40r4 42r4 48r7 49r7
-. 50r7 52r7 53r7 54r7 60r4
-12K12 PADTS=12:28 18r4 22r4 23r4 25r4 26r4 28r4 29r4 31r4 32r4 34r4 35r4
-. 59r4
-13K12 ART=13:32 15r20 23r27 38r14 41r25 44r14 47r26
-15o4 Start{7|49O9} 38m4 41r17 47r17 50r55 54r55
-15o11 Finish{7|49O9} 44m4 47r8 50r48 54r48
+508U14*Put_Line 17|20s9 21s9 31s12 34s12 46s12 49s12 55s9
+X 17 main_ada_tasks_02.adb
+6U11*main_ada_tasks_02 6b11 58l5 58t22
+11K12 ATIO=11:32 20r4 21r4 31r7 34r7 46r7 49r7 55r4
+12K12 PADTS=12:28 19r4 26r8 27r8 30r7 32r7 35r7 41r9 42r9 45r7 47r7 50r7
+. 54r4
+13K12 ART=13:32 15r28 16r20 24r20 25r20 26r31 27r31 28r18 39r20 40r20 43r18
+15o4 the_start{7|49O9} 25m4 30r26 32r32 35r32 40m4 45r26 47r32 50r32
+15o15 the_finish{7|49O9} 28m4 30r37 32r43 35r43 43m4 45r37 47r43 50r43
+16o4 the_deadline{7|54O9} 24m4 30r49 32r55 35r55 39m4 45r49 47r55 50r55
 X 18 pkg_ada_dtstamp.ads
 10K9*pkg_ada_dtstamp 17|2w6 12r28 18|31e20
-17U14*dtstamp 17|18s10 22s10 25s10 28s10 31s10 34s10 59s10
-21U14*exec_delay_time 17|23s10
-22U14*exec_delay_sec 17|26s10
-23U14*exec_delay_msec 17|29s10
-24U14*exec_delay_usec 17|32s10
-25U14*exec_delay_nsec 17|35s10
+17U14*dtstamp 17|19s10 54s10
+21U14*exec_delay_time 17|26s14 27s14
+23U14*exec_delay_msec 17|41s15
+24U14*exec_delay_usec 17|42s15
+27U14*exec_check_overrun 17|32s13 35s13 47s13 50s13
+28V14*exec_overrun{boolean} 17|30s13 45s13
 X 33 s-stausa.ads
 208U14*Initialize 209i<c,__gnat_stack_usage_initialize>22
 273U14*Output_Results 277i<c,__gnat_stack_usage_output_results>22
 
 QQ SPARKVERSION SPARK Community 2020 (20200818)
-GG EK_DIRECT_CALLS main_ada_tasks_01 13 ada___ada__text_io__put__4 ada___ada__text_io__put_line__2 pkg_ada_dtstamp__dtstamp pkg_ada_dtstamp__exec_delay_time pkg_ada_dtstamp__exec_delay_sec pkg_ada_dtstamp__exec_delay_msec pkg_ada_dtstamp__exec_delay_usec pkg_ada_dtstamp__exec_delay_nsec ada___ada__real_time__clock ada___ada__real_time__Oadd ada___ada__real_time__Osubtract__2 ada___ada__real_time__to_duration ada___ada__real_time__to_time_span
-GG EK_GLOBALS main_ada_tasks_01 local FALSE E_PROCEDURE FALSE ORIGIN_FLOW 0 proper_proof_in 0 proper_input 2 ada___ada__text_io__file_system ada___ada__real_time__clock_time proper_output 1 ada___ada__text_io__file_system refined_proof_in 0 refined_input 2 ada___ada__text_io__file_system ada___ada__real_time__clock_time refined_output 1 ada___ada__text_io__file_system calls_proof 0 calls 6 pkg_ada_dtstamp__dtstamp pkg_ada_dtstamp__exec_delay_time pkg_ada_dtstamp__exec_delay_sec pkg_ada_dtstamp__exec_delay_msec pkg_ada_dtstamp__exec_delay_usec pkg_ada_dtstamp__exec_delay_nsec calls_conditional 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 1 ada___ada__text_io__file_system LOCKS 0
-GG EK_FLOW_SCOPE ada___ada___ada__strings__unbounded__Oeq__2 FALSE FALSE FALSE FALSE TRUE ada___ada___ada__strings__unbounded VISIBLE_PART
-GG EK_FLOW_SCOPE ada___system__soft_links__task_name_nt FALSE FALSE FALSE FALSE TRUE ada___system__soft_links VISIBLE_PART
-GG EK_FLOW_SCOPE ada___system__os_interface__kill FALSE FALSE FALSE FALSE TRUE ada___system__os_interface VISIBLE_PART
-GG EK_FLOW_SCOPE ada___system__crtl__clearerr FALSE FALSE FALSE FALSE TRUE ada___system__crtl VISIBLE_PART
-GG EK_FLOW_SCOPE ada___ada___system__task_primitives__operations__write_lock__3 FALSE FALSE FALSE FALSE TRUE ada___ada___system__task_primitives__operations VISIBLE_PART
-GG EK_FLOW_SCOPE ada___system__unsigned_types__rotate_right FALSE FALSE FALSE FALSE TRUE ada___system__unsigned_types VISIBLE_PART
-GG EK_FLOW_SCOPE ada___ada__finalization__finalize FALSE FALSE FALSE FALSE TRUE ada___ada__finalization VISIBLE_PART
-GG EK_FLOW_SCOPE ada___system__stack_checking TRUE FALSE FALSE FALSE FALSE system
-GG EK_FLOW_SCOPE ada___ada__text_io__get_immediate__4 FALSE FALSE FALSE FALSE TRUE ada___ada__text_io VISIBLE_PART
-GG EK_FLOW_SCOPE ada___ada___ada__strings__unbounded__trim__2 FALSE FALSE FALSE FALSE TRUE ada___ada___ada__strings__unbounded VISIBLE_PART
-GG EK_FLOW_SCOPE main_ada_tasks_01 FALSE FALSE FALSE FALSE FALSE __standard
-GG EK_FLOW_SCOPE ada___ada__exceptions__exception_name_simple FALSE FALSE FALSE FALSE TRUE ada___ada__exceptions PRIVATE_PART
+GG EK_DIRECT_CALLS main_ada_tasks_02 9 ada___ada__text_io__put_line__2 pkg_ada_dtstamp__dtstamp pkg_ada_dtstamp__exec_delay_time pkg_ada_dtstamp__exec_delay_msec pkg_ada_dtstamp__exec_delay_usec pkg_ada_dtstamp__exec_check_overrun pkg_ada_dtstamp__exec_overrun ada___ada__real_time__clock ada___ada__real_time__to_time_span
+GG EK_GLOBALS main_ada_tasks_02 local FALSE E_PROCEDURE FALSE ORIGIN_FLOW 0 proper_proof_in 0 proper_input 2 ada___ada__text_io__file_system ada___ada__real_time__clock_time proper_output 1 ada___ada__text_io__file_system refined_proof_in 0 refined_input 2 ada___ada__text_io__file_system ada___ada__real_time__clock_time refined_output 1 ada___ada__text_io__file_system calls_proof 0 calls 5 pkg_ada_dtstamp__dtstamp pkg_ada_dtstamp__exec_delay_time pkg_ada_dtstamp__exec_delay_msec pkg_ada_dtstamp__exec_delay_usec pkg_ada_dtstamp__exec_check_overrun calls_conditional 1 pkg_ada_dtstamp__exec_overrun FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 1 ada___ada__text_io__file_system LOCKS 0
 GG EK_FLOW_SCOPE ada___system__os_interface__to_pthread_t FALSE FALSE FALSE TRUE ada___ada__unchecked_conversion TRUE ada___system__os_interface__to_pthread_tGP11158 VISIBLE_PART
 GG EK_FLOW_SCOPE ada___interfaces__c__is_nul_terminated__4 FALSE FALSE FALSE FALSE TRUE ada___interfaces__c VISIBLE_PART
 GG EK_FLOW_SCOPE ada___ada___ada__strings__unbounded__initialize__2 FALSE FALSE FALSE FALSE TRUE ada___ada___ada__strings__unbounded PRIVATE_PART
@@ -124,6 +105,7 @@ GG EK_FLOW_SCOPE ada___ada__real_time__microseconds FALSE FALSE FALSE FALSE TRUE
 GG EK_FLOW_SCOPE ada___ada__text_io__line_length FALSE FALSE FALSE FALSE TRUE ada___ada__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE ada___system__os_interface__sigdelset FALSE FALSE FALSE FALSE TRUE ada___system__os_interface VISIBLE_PART
 GG EK_FLOW_SCOPE interfaces__rotate_right__2 FALSE FALSE FALSE FALSE TRUE interfaces VISIBLE_PART
+GG EK_FLOW_SCOPE main_ada_tasks_02 FALSE FALSE FALSE FALSE FALSE __standard
 GG EK_FLOW_SCOPE ada___interfaces__c_streams__file_exists FALSE FALSE FALSE FALSE TRUE ada___interfaces__c_streams VISIBLE_PART
 GG EK_FLOW_SCOPE ada___interfaces__c__to_ada__2 FALSE FALSE FALSE FALSE TRUE ada___interfaces__c VISIBLE_PART
 GG EK_FLOW_SCOPE ada___ada___system__task_primitives__operations__read_lock FALSE FALSE FALSE FALSE TRUE ada___ada___system__task_primitives__operations VISIBLE_PART
@@ -219,8 +201,8 @@ GG EK_FLOW_SCOPE ada___ada__text_io__new_line FALSE FALSE FALSE FALSE TRUE ada__
 GG EK_FLOW_SCOPE ada___ada__text_io__set_line__2 FALSE FALSE FALSE FALSE TRUE ada___ada__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE interfaces__rotate_left__3 FALSE FALSE FALSE FALSE TRUE interfaces VISIBLE_PART
 GG EK_FLOW_SCOPE ada___system__os_interface__pthread_self FALSE FALSE FALSE FALSE TRUE ada___system__os_interface VISIBLE_PART
-GG EK_FLOW_SCOPE ada___ada__text_io__put__3 FALSE FALSE FALSE FALSE TRUE ada___ada__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE ada___system__wch_con TRUE FALSE FALSE FALSE FALSE system
+GG EK_FLOW_SCOPE ada___ada__text_io__put__3 FALSE FALSE FALSE FALSE TRUE ada___ada__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE ada___system__unsigned_types__rotate_right__2 FALSE FALSE FALSE FALSE TRUE ada___system__unsigned_types VISIBLE_PART
 GG EK_FLOW_SCOPE ada___system__finalization_root__adjust FALSE FALSE FALSE FALSE TRUE ada___system__finalization_root VISIBLE_PART
 GG EK_FLOW_SCOPE ada___system__tasking TRUE FALSE FALSE FALSE FALSE system
@@ -283,8 +265,8 @@ GG EK_FLOW_SCOPE ada___system__atomic_counters TRUE FALSE FALSE FALSE FALSE syst
 GG EK_FLOW_SCOPE ada___ada__text_io__put__4 FALSE FALSE FALSE FALSE TRUE ada___ada__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE ada___ada__text_io__read__2 FALSE FALSE FALSE FALSE TRUE ada___ada__text_io PRIVATE_PART
 GG EK_FLOW_SCOPE ada___system__soft_links__get_jmpbuf_address_soft FALSE FALSE FALSE FALSE TRUE ada___system__soft_links VISIBLE_PART
-GG EK_FLOW_SCOPE ada___ada__text_io__col__2 FALSE FALSE FALSE FALSE TRUE ada___ada__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE ada___system__os_interface__pthread_getspecific FALSE FALSE FALSE FALSE TRUE ada___system__os_interface VISIBLE_PART
+GG EK_FLOW_SCOPE ada___ada__text_io__col__2 FALSE FALSE FALSE FALSE TRUE ada___ada__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE ada___ada__real_time__Olt FALSE FALSE FALSE FALSE TRUE ada___ada__real_time VISIBLE_PART
 GG EK_FLOW_SCOPE ada___ada___ada__strings__unbounded__head__2 FALSE FALSE FALSE FALSE TRUE ada___ada___ada__strings__unbounded VISIBLE_PART
 GG EK_FLOW_SCOPE ada___ada___ada__strings__unbounded__insert FALSE FALSE FALSE FALSE TRUE ada___ada___ada__strings__unbounded VISIBLE_PART
@@ -342,8 +324,8 @@ GG EK_FLOW_SCOPE ada___system__file_control_block__afcb_allocate FALSE FALSE FAL
 GG EK_FLOW_SCOPE ada___system__atomic_counters__is_one FALSE FALSE FALSE FALSE TRUE ada___system__atomic_counters VISIBLE_PART
 GG EK_FLOW_SCOPE ada___interfaces__c__to_ada__5 FALSE FALSE FALSE FALSE TRUE ada___interfaces__c VISIBLE_PART
 GG EK_FLOW_SCOPE ada___ada___ada__strings__unbounded__count__2 FALSE FALSE FALSE FALSE TRUE ada___ada___ada__strings__unbounded VISIBLE_PART
-GG EK_FLOW_SCOPE ada___ada__text_io__set_error FALSE FALSE FALSE FALSE TRUE ada___ada__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE ada___ada___system__task_primitives__operations__sleep FALSE FALSE FALSE FALSE TRUE ada___ada___system__task_primitives__operations VISIBLE_PART
+GG EK_FLOW_SCOPE ada___ada__text_io__set_error FALSE FALSE FALSE FALSE TRUE ada___ada__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE ada___system__crtl__chdir FALSE FALSE FALSE FALSE TRUE ada___system__crtl VISIBLE_PART
 GG EK_FLOW_SCOPE ada___ada__real_time__Ogt FALSE FALSE FALSE FALSE TRUE ada___ada__real_time VISIBLE_PART
 GG EK_FLOW_SCOPE ada___ada__text_io__page FALSE FALSE FALSE FALSE TRUE ada___ada__text_io VISIBLE_PART
@@ -564,8 +546,8 @@ GG EK_FLOW_SCOPE ada___system__crtl__fseek64 FALSE FALSE FALSE FALSE TRUE ada___
 GG EK_FLOW_SCOPE ada___ada___ada__strings__unbounded__free FALSE FALSE FALSE FALSE TRUE ada___ada___ada__strings__unbounded VISIBLE_PART
 GG EK_FLOW_SCOPE ada___system__soft_links__get_jmpbuf_address_nt FALSE FALSE FALSE FALSE TRUE ada___system__soft_links VISIBLE_PART
 GG EK_FLOW_SCOPE ada___system__unsigned_types__rotate_left__5 FALSE FALSE FALSE FALSE TRUE ada___system__unsigned_types VISIBLE_PART
-GG EK_FLOW_SCOPE ada___ada___system__task_primitives__operations__unlock_rts FALSE FALSE FALSE FALSE TRUE ada___ada___system__task_primitives__operations VISIBLE_PART
 GG EK_FLOW_SCOPE pkg_ada_dtstamp__exec_delay_sec FALSE FALSE FALSE FALSE TRUE pkg_ada_dtstamp VISIBLE_PART
+GG EK_FLOW_SCOPE ada___ada___system__task_primitives__operations__unlock_rts FALSE FALSE FALSE FALSE TRUE ada___ada___system__task_primitives__operations VISIBLE_PART
 GG EK_FLOW_SCOPE interfaces__shift_left FALSE FALSE FALSE FALSE TRUE interfaces VISIBLE_PART
 GG EK_FLOW_SCOPE ada___interfaces__c_streams__fwrite FALSE FALSE FALSE FALSE TRUE ada___interfaces__c_streams VISIBLE_PART
 GG EK_FLOW_SCOPE ada___system__crtl__close FALSE FALSE FALSE FALSE TRUE ada___system__crtl VISIBLE_PART
@@ -597,8 +579,8 @@ GG EK_FLOW_SCOPE ada___ada___ada__strings__unbounded__unbounded_slice FALSE FALS
 GG EK_FLOW_SCOPE ada___ada__streams__stream_element_arraySR FALSE FALSE FALSE FALSE TRUE ada___ada__streams PRIVATE_PART
 GG EK_FLOW_SCOPE pkg_ada_dtstamp__exec_delay_usec FALSE FALSE FALSE FALSE TRUE pkg_ada_dtstamp VISIBLE_PART
 GG EK_FLOW_SCOPE ada___ada___system__task_primitives__operations__current_state FALSE FALSE FALSE FALSE TRUE ada___ada___system__task_primitives__operations VISIBLE_PART
-GG EK_FLOW_SCOPE ada___system__crtl__ftell FALSE FALSE FALSE FALSE TRUE ada___system__crtl VISIBLE_PART
 GG EK_FLOW_SCOPE ada___system__os_interface__pthread_mutexattr_destroy FALSE FALSE FALSE FALSE TRUE ada___system__os_interface VISIBLE_PART
+GG EK_FLOW_SCOPE ada___system__crtl__ftell FALSE FALSE FALSE FALSE TRUE ada___system__crtl VISIBLE_PART
 GG EK_FLOW_SCOPE ada___ada__exceptions__exception_information FALSE FALSE FALSE FALSE TRUE ada___ada__exceptions VISIBLE_PART
 GG EK_FLOW_SCOPE ada___ada__text_io__set_line_length FALSE FALSE FALSE FALSE TRUE ada___ada__text_io VISIBLE_PART
 GG EK_FLOW_SCOPE ada___system__os_interface__clock_getres FALSE FALSE FALSE FALSE TRUE ada___system__os_interface VISIBLE_PART
@@ -610,8 +592,8 @@ GG EK_FLOW_SCOPE ada___ada___ada__strings__unbounded__to_unbounded_string__2 FAL
 GG EK_FLOW_SCOPE ada___system__soft_links__get_sec_stack_nt FALSE FALSE FALSE FALSE TRUE ada___system__soft_links VISIBLE_PART
 GG EK_FLOW_SCOPE ada___interfaces__c__to_c__9 FALSE FALSE FALSE FALSE TRUE ada___interfaces__c VISIBLE_PART
 GG EK_FLOW_SCOPE ada___ada__text_io__end_of_page__2 FALSE FALSE FALSE FALSE TRUE ada___ada__text_io VISIBLE_PART
-GG EK_FLOW_SCOPE pkg_ada_dtstamp__exec_delay_nsec FALSE FALSE FALSE FALSE TRUE pkg_ada_dtstamp VISIBLE_PART
 GG EK_FLOW_SCOPE ada___system__os_interface__pthread_setschedparam FALSE FALSE FALSE FALSE TRUE ada___system__os_interface VISIBLE_PART
+GG EK_FLOW_SCOPE pkg_ada_dtstamp__exec_delay_nsec FALSE FALSE FALSE FALSE TRUE pkg_ada_dtstamp VISIBLE_PART
 GG EK_FLOW_SCOPE ada___system__os_interface__pthread_attr_setaffinity_np FALSE FALSE FALSE FALSE TRUE ada___system__os_interface VISIBLE_PART
 GG EK_FLOW_SCOPE ada___ada___system__task_primitives__operations__set_false FALSE FALSE FALSE FALSE TRUE ada___ada___system__task_primitives__operations VISIBLE_PART
 GG EK_FLOW_SCOPE interfaces__shift_right_arithmetic FALSE FALSE FALSE FALSE TRUE interfaces VISIBLE_PART
@@ -760,6 +742,17 @@ GG EK_FLOW_SCOPE ada___system__crtl__memcpy FALSE FALSE FALSE FALSE TRUE ada___s
 GG EK_FLOW_SCOPE ada___ada__real_time__nanoseconds FALSE FALSE FALSE FALSE TRUE ada___ada__real_time VISIBLE_PART
 GG EK_FLOW_SCOPE ada___ada___system__task_primitives__operations__resume_task FALSE FALSE FALSE FALSE TRUE ada___ada___system__task_primitives__operations VISIBLE_PART
 GG EK_FLOW_SCOPE ada___interfaces__c__to_c__2 FALSE FALSE FALSE FALSE TRUE ada___interfaces__c VISIBLE_PART
+GG EK_FLOW_SCOPE ada___ada___ada__strings__unbounded__Oeq__2 FALSE FALSE FALSE FALSE TRUE ada___ada___ada__strings__unbounded VISIBLE_PART
+GG EK_FLOW_SCOPE ada___system__soft_links__task_name_nt FALSE FALSE FALSE FALSE TRUE ada___system__soft_links VISIBLE_PART
+GG EK_FLOW_SCOPE ada___system__os_interface__kill FALSE FALSE FALSE FALSE TRUE ada___system__os_interface VISIBLE_PART
+GG EK_FLOW_SCOPE ada___system__crtl__clearerr FALSE FALSE FALSE FALSE TRUE ada___system__crtl VISIBLE_PART
+GG EK_FLOW_SCOPE ada___ada___system__task_primitives__operations__write_lock__3 FALSE FALSE FALSE FALSE TRUE ada___ada___system__task_primitives__operations VISIBLE_PART
+GG EK_FLOW_SCOPE ada___system__unsigned_types__rotate_right FALSE FALSE FALSE FALSE TRUE ada___system__unsigned_types VISIBLE_PART
+GG EK_FLOW_SCOPE ada___ada__finalization__finalize FALSE FALSE FALSE FALSE TRUE ada___ada__finalization VISIBLE_PART
+GG EK_FLOW_SCOPE ada___system__stack_checking TRUE FALSE FALSE FALSE FALSE system
+GG EK_FLOW_SCOPE ada___ada__text_io__get_immediate__4 FALSE FALSE FALSE FALSE TRUE ada___ada__text_io VISIBLE_PART
+GG EK_FLOW_SCOPE ada___ada___ada__strings__unbounded__trim__2 FALSE FALSE FALSE FALSE TRUE ada___ada___ada__strings__unbounded VISIBLE_PART
+GG EK_FLOW_SCOPE ada___ada__exceptions__exception_name_simple FALSE FALSE FALSE FALSE TRUE ada___ada__exceptions PRIVATE_PART
 GG EK_REMOTE_STATES 2 ada___ada__text_io__file_system ada___ada__real_time__clock_time
 GG EK_PREDEF_INIT_ENTITIES 2 ada___ada__text_io__file_system ada___ada__real_time__clock_time
 GG EK_VOLATILES AR 1 ada___ada__real_time__clock_time AW 1 ada___ada__real_time__clock_time ER 0 EW 0

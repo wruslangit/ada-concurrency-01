@@ -25,7 +25,7 @@ is
    procedure exec_delay_nsec (nsec : in Positive);
    
    procedure exec_check_overrun(the_start, the_finish : in AART.Time; the_deadline : in AART.Time_Span);
-   function  exec_overrun(the_start, the_finish : in AART.Time; the_deadline : in AART.Time_Span) return Boolean;
+   function  getif_overrun(the_start, the_finish : in AART.Time; the_deadline : in AART.Time_Span) return Boolean;
    
 -- ======================================================== 
 end pkg_ada_dtstamp;

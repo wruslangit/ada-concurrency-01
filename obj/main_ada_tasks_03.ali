@@ -11,7 +11,7 @@ RV NO_IO
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U main_ada_tasks_02%b	main_ada_tasks_02.adb	d8a08f9c NE OO SU IL
+U main_ada_tasks_03%b	main_ada_tasks_03.adb	0603214c NE OO SU IL
 W ada%s			ada.ads			ada.ali
 W ada.real_time%s	a-reatim.adb		a-reatim.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
@@ -34,8 +34,8 @@ D a-unccon.ads		20200312110721 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20200312110721 5ab55268 interfaces%s
 D i-c.ads		20200312110721 5421119b interfaces.c%s
 D i-cstrea.ads		20200312110721 e53d8b8e interfaces.c_streams%s
-D main_ada_tasks_02.adb	20210220021528 50f67675 main_ada_tasks_02%b
-D pkg_ada_dtstamp.ads	20210220011216 020bb6c0 pkg_ada_dtstamp%s
+D main_ada_tasks_03.adb	20210220041301 7d04dbf3 main_ada_tasks_03%b
+D pkg_ada_dtstamp.ads	20210220023507 f15ab596 pkg_ada_dtstamp%s
 D system.ads		20200312110721 4635ec04 system%s
 D s-atacco.ads		20200312110721 4c36d12f system.address_to_access_conversions%s
 D s-atocou.ads		20200312110721 b45c2d8d system.atomic_counters%s
@@ -71,28 +71,25 @@ X 7 a-reatim.ads
 39K13*Real_Time 185e18 18|3w10 3r29 13r32
 49O9*Time<duration> 18|15r32
 54O9*Time_Span<duration> 18|16r24
-61V13*Clock{49O9} 18|25s24 28s22 40s24 43s22
-112V13*To_Time_Span{54O9} 18|24s24 26s35 27s35 39s24
+61V13*Clock{49O9} 18|25s24 28s22 33s24 36s22
+112V13*To_Time_Span{54O9} 18|24s24 26s35 27s35 32s24 34s35 35s35
 X 13 a-textio.ads
 49K13*Text_IO 471e16 18|1w10 11r32
-263U14*Put_Line 18|20s9 21s9 31s12 34s12 46s12 49s12 55s9
-X 18 main_ada_tasks_02.adb
-6U11*main_ada_tasks_02 6b11 58l5 58t22
-11K12 ATIO=11:32 20r4 21r4 31r7 34r7 46r7 49r7 55r4
-12K12 PADTS=12:28 19r4 26r8 27r8 30r7 32r7 35r7 41r9 42r9 45r7 47r7 50r7
-. 54r4
-13K12 ART=13:32 15r28 16r20 24r20 25r20 26r31 27r31 28r18 39r20 40r20 43r18
-15o4 the_start{7|49O9} 25m4 30r26 32r32 35r32 40m4 45r26 47r32 50r32
-15o15 the_finish{7|49O9} 28m4 30r37 32r43 35r43 43m4 45r37 47r43 50r43
-16o4 the_deadline{7|54O9} 24m4 30r49 32r55 35r55 39m4 45r49 47r55 50r55
+263U14*Put_Line 18|20s9 21s9 40s9
+X 18 main_ada_tasks_03.adb
+6U11*main_ada_tasks_03 6b11 43l5 43t22
+11K12 ATIO=11:32 20r4 21r4 40r4
+12K12 PADTS=12:28 19r4 26r8 27r8 29r4 34r8 35r8 37r4 39r4
+13K12 ART=13:32 15r28 16r20 24r20 25r20 26r31 27r31 28r18 32r20 33r20 34r31
+. 35r31 36r18
+15o4 the_start{7|49O9} 25m4 29r29 33m4 37r29
+15o15 the_finish{7|49O9} 28m4 29r40 36m4 37r40
+16o4 the_deadline{7|54O9} 24m4 29r52 32m4 37r52
 X 19 pkg_ada_dtstamp.ads
 10K9*pkg_ada_dtstamp 18|2w6 12r28 19|31e20
-17U14*dtstamp 18|19s10 54s10
-21U14*exec_delay_time 18|26s14 27s14
-23U14*exec_delay_msec 18|41s15
-24U14*exec_delay_usec 18|42s15
-27U14*exec_check_overrun 18|32s13 35s13 47s13 50s13
-28V14*exec_overrun{boolean} 18|30s13 45s13
+17U14*dtstamp 18|19s10 39s10
+21U14*exec_delay_time 18|26s14 27s14 34s14 35s14
+27U14*exec_check_overrun 18|29s10 37s10
 X 36 s-stausa.ads
 203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
 268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22

@@ -113,21 +113,12 @@ is
    -- (4) EXECUTE DELAY UNTIL (SECONDS)
    -- ====================================================
     procedure exec_delay_time (interval : ART.Time_Span) is
-  	-- Start, Finish : ART.Time; 
-  		
-      -- As with delay, delay until is accurate only in its lower bound. 
+  	   -- As with delay, delay until is accurate only in its lower bound. 
       -- The task involved will not be released before the current time has 
       -- reached that specified in the statement, but it may be released later.
             
     begin
-       -- Start  := ART.Clock;
-       -- dtstamp; ATIO.Put_Line("Started");
-        
       delay until (ART.Clock + interval);
-            
-       -- Finish  := ART.Clock; 
-       -- dtstamp; ATIO.Put_Line("Finished");
-      
 	end exec_delay_time; 
  
  -- =====================================================
@@ -166,19 +157,36 @@ is
  -- (5) PROCEDURE CHECK EXECUTION OVERRUN
  -- =====================================================   
    procedure exec_check_overrun(the_start, the_finish : in AART.Time; the_deadline : in AART.Time_Span) is
+      the_overrun : AART.Time_Span;
    begin
+      if getif_overrun(the_start, the_finish, the_deadline) then
          
-      ATIO.Put(" Execution duration = "); 
-      ATIO.Put_Line(Duration'Image(To_Duration(the_finish - the_start))); 
-      ATIO.Put(" Deadline  duration = "); 
-      ATIO.Put_Line(Duration'Image(To_Duration(the_deadline))); 
-      
+         ATIO.Put_Line ("Raise Execution Overrun +++");      
+         ATIO.Put("   Execution duration (sec) = "); 
+         ATIO.Put_Line(Duration'Image(To_Duration(the_finish - the_start))); 
+         ATIO.Put("   Deadline  duration (sec) = "); 
+         ATIO.Put_Line(Duration'Image(To_Duration(the_deadline))); 
+         ATIO.Put("   Overrun   time     (sec) = ");
+         the_overrun := (the_finish - the_start) - (the_deadline);
+         ATIO.Put_Line(Duration'Image(To_Duration(the_overrun)));
+         ATIO.New_Line;
+      else 
+         ATIO.Put_Line ("Raise Execution Underrun ---");      
+         ATIO.Put("   Execution duration (sec) = "); 
+         ATIO.Put_Line(Duration'Image(To_Duration(the_finish - the_start))); 
+         ATIO.Put("   Deadline  duration (sec) = "); 
+         ATIO.Put_Line(Duration'Image(To_Duration(the_deadline))); 
+         ATIO.Put("   Underrun  time     (sec) = ");
+         the_overrun := (the_finish - the_start) - (the_deadline);
+         ATIO.Put_Line(Duration'Image(To_Duration(the_overrun))); 
+         ATIO.New_Line;
+      end if;
    end exec_check_overrun;
    
     -- =====================================================
  -- (6) FUNCTION EXECUTION OVERRUN
  -- =====================================================  
-   function exec_overrun(the_start, the_finish : in AART.Time; the_deadline : in AART.Time_Span) return Boolean is
+   function getif_overrun(the_start, the_finish : in AART.Time; the_deadline : in AART.Time_Span) return Boolean is
    begin
       if (the_finish - the_start) > the_deadline then
          return True; 
@@ -186,7 +194,7 @@ is
          return False; 
       end if;
       
-   end exec_overrun;   
+   end getif_overrun;   
    
 -- ========================================================
 begin
