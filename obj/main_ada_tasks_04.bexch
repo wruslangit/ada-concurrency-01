@@ -6,6 +6,7 @@ b__main_ada_tasks_04.o
 [BOUND OBJECT FILES]
 /home/wruslan/github/ada-concurrent-01/obj/pkg_ada_dtstamp.o
 /home/wruslan/github/ada-concurrent-01/obj/pkg_embedded_car.o
+/home/wruslan/github/ada-concurrent-01/obj/pkg_vector_array.o
 /home/wruslan/github/ada-concurrent-01/obj/main_ada_tasks_04.o
 [GENERATED SOURCE FILES]
 b__main_ada_tasks_04.ads

@@ -11,12 +11,13 @@ RV NO_IO
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U main_ada_tasks_04%b	main_ada_tasks_04.adb	7405e414 NE OO SU IL
+U main_ada_tasks_04%b	main_ada_tasks_04.adb	54507df1 NE OO SU IL
 W ada%s			ada.ads			ada.ali
 W ada.real_time%s	a-reatim.adb		a-reatim.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 W pkg_ada_dtstamp%s	pkg_ada_dtstamp.adb	pkg_ada_dtstamp.ali
 W pkg_embedded_car%s	pkg_embedded_car.adb	pkg_embedded_car.ali
+W pkg_vector_array%s	pkg_vector_array.adb	pkg_vector_array.ali
 
 D ada.ads		20200312110721 76789da1 ada%s
 D a-charac.ads		20200312110721 2d3ec45b ada.characters%s
@@ -35,9 +36,10 @@ D a-unccon.ads		20200312110721 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20200312110721 5ab55268 interfaces%s
 D i-c.ads		20200312110721 5421119b interfaces.c%s
 D i-cstrea.ads		20200312110721 e53d8b8e interfaces.c_streams%s
-D main_ada_tasks_04.adb	20210220074705 71a277c1 main_ada_tasks_04%b
+D main_ada_tasks_04.adb	20210220102641 03d3c5b8 main_ada_tasks_04%b
 D pkg_ada_dtstamp.ads	20210220023507 f15ab596 pkg_ada_dtstamp%s
 D pkg_embedded_car.ads	20210220073556 7ea0696a pkg_embedded_car%s
+D pkg_vector_array.ads	20210220101311 52242b9c pkg_vector_array%s
 D system.ads		20200312110721 4635ec04 system%s
 D s-atacco.ads		20200312110721 4c36d12f system.address_to_access_conversions%s
 D s-atocou.ads		20200312110721 b45c2d8d system.atomic_counters%s
@@ -68,36 +70,41 @@ D s-traent.ads		20200312110721 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20200312110721 34867c83 system.unsigned_types%s
 D s-wchcon.ads		20200312110721 1b7d22d2 system.wch_con%s
 X 1 ada.ads
-16K9*Ada 20e8 18|1r6 2r6 2r25 13r28 14r28
+16K9*Ada 20e8 18|1r6 2r6 2r25 14r28 15r28
 X 7 a-reatim.ads
-39K13*Real_Time 185e18 18|2w10 2r29 14r32
-49O9*Time<duration> 18|19r32
-54O9*Time_Span<duration> 18|20r24
-61V13*Clock{49O9} 18|30s24 34s22
-112V13*To_Time_Span{54O9} 18|29s24 32s34
+39K13*Real_Time 185e18 18|2w10 2r29 15r32
+49O9*Time<duration> 18|21r32
+54O9*Time_Span<duration> 18|22r24
+61V13*Clock{49O9} 18|38s24 42s22
+112V13*To_Time_Span{54O9} 18|37s24 40s34
 X 13 a-textio.ads
-49K13*Text_IO 471e16 18|1w10 13r32
-166U14*New_Line 18|48s9
-263U14*Put_Line 18|24s9 25s9 47s22 51s9
+49K13*Text_IO 471e16 18|1w10 14r32
+166U14*New_Line 18|57s9 60s9
+263U14*Put_Line 18|32s9 33s9 56s22 59s22 71s9
 X 18 main_ada_tasks_04.adb
-8U11*main_ada_tasks_04 8b11 54l5 54t22
-13K12 ATIO=13:32 24r4 25r4 47r17 48r4 51r4
-14K12 ART=14:32 19r28 20r20 29r20 30r20 32r30 34r18
-16K12 PADTS=16:28 23r4 32r7 35r4 50r4
-17K12 PEC=17:28 47r4
-19o4 the_start{7|49O9} 30m4 35r29
-19o15 the_finish{7|49O9} 34m4 35r40
-20o4 the_deadline{7|54O9} 29m4 35r52
-31i8 idx{integer}
+9U11*main_ada_tasks_04 9b11 74l5 74t22
+14K12 ATIO=14:32 32r4 33r4 56r17 57r4 59r17 60r4 71r4
+15K12 ART=15:32 21r28 22r20 37r20 38r20 40r30 42r18
+17K12 PADTS=17:28 31r4 40r7 43r4 70r4
+18K12 PEC=18:28 56r4
+19K12 PVA=19:28 59r4 68r4
+21o4 the_start{7|49O9} 38m4 43r29
+21o15 the_finish{7|49O9} 42m4 43r40
+22o4 the_deadline{7|54O9} 37m4 43r52
+39i8 idx{integer}
 X 19 pkg_ada_dtstamp.ads
-10K9*pkg_ada_dtstamp 18|4w6 16r28 19|31e20
-17U14*dtstamp 18|23s10 50s10
-21U14*exec_delay_time 18|32s13
-27U14*exec_check_overrun 18|35s10
+10K9*pkg_ada_dtstamp 18|4w6 17r28 19|31e20
+17U14*dtstamp 18|31s10 70s10
+21U14*exec_delay_time 18|40s13
+27U14*exec_check_overrun 18|43s10
 X 20 pkg_embedded_car.ads
-10K9*pkg_embedded_car 18|5w6 17r28 20|31e21
-17U14*dtstamp 18|47s8
-X 37 s-stausa.ads
+10K9*pkg_embedded_car 18|5w6 18r28 20|31e21
+17U14*dtstamp 18|56s8
+X 21 pkg_vector_array.ads
+10K9*pkg_vector_array 18|6w6 19r28 21|46e21
+26U14*exec_task_01 18|68s8
+32U14*dtstamp 18|59s8
+X 38 s-stausa.ads
 203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
 268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
 

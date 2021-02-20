@@ -3,6 +3,7 @@ with Ada.Real_Time; use Ada.Real_Time;
 
 with pkg_ada_dtstamp;
 with pkg_embedded_car;
+with pkg_vector_array;
 
 -- ========================================================
 procedure main_ada_tasks_04
@@ -15,9 +16,16 @@ is
    
    package PADTS   renames pkg_ada_dtstamp;
    package PEC     renames pkg_embedded_car;
+   package PVA     renames pkg_vector_array;
    
    the_start, the_finish : ART.Time; 
    the_deadline  : ART.Time_Span;
+   
+   -- PVA.SumDiff(A, B, Sum, Diff);
+   -- A    : PVA.Vector;
+   -- B    : PVA.Vector;
+   -- Sum  : PVA.Vector_Prt;
+   -- Diff : PVA.Vector_Prt;
    
 begin
    PADTS.dtstamp;
@@ -47,6 +55,17 @@ begin
    
    PEC.dtstamp; ATIO.Put_Line("Testing PEC only");
    ATIO.New_Line;
+   
+   PVA.dtstamp; ATIO.Put_Line("Testing PVA only");
+   ATIO.New_Line;
+   
+   -- A := (1..10_000);
+   -- B := (100..10_100);
+   -- Sum :=
+   -- Diff :=           
+   -- PVA.SumDiff(A, B, Sum, Diff);
+   
+   PVA.exec_task_01;
    
    PADTS.dtstamp;
    ATIO.Put_Line ("Alhamdulillah 3 times WRY");
