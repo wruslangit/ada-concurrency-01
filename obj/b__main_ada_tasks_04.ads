@@ -37,7 +37,7 @@ package ada_main is
    pragma Export (C, main, "main");
 
    type Version_32 is mod 2 ** 32;
-   u00001 : constant Version_32 := 16#54507df1#;
+   u00001 : constant Version_32 := 16#f09b2d99#;
    pragma Export (C, u00001, "main_ada_tasks_04B");
    u00002 : constant Version_32 := 16#050ff2f0#;
    pragma Export (C, u00002, "system__standard_libraryB");
@@ -445,9 +445,9 @@ package ada_main is
    pragma Export (C, u00203, "pkg_embedded_carB");
    u00204 : constant Version_32 := 16#fc785c06#;
    pragma Export (C, u00204, "pkg_embedded_carS");
-   u00205 : constant Version_32 := 16#b680c619#;
+   u00205 : constant Version_32 := 16#4c8d3589#;
    pragma Export (C, u00205, "pkg_vector_arrayB");
-   u00206 : constant Version_32 := 16#d0fc1ef0#;
+   u00206 : constant Version_32 := 16#74374e98#;
    pragma Export (C, u00206, "pkg_vector_arrayS");
    u00207 : constant Version_32 := 16#8bf4f526#;
    pragma Export (C, u00207, "system__tasking__stagesB");

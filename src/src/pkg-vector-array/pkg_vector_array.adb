@@ -53,65 +53,34 @@ is
     -- ====================================================
     -- Procedure using two(2) tasks
     -- ====================================================
-    procedure SumDiff (A, B : Vector_Const;
-                       Sum  : Vector_Prt;
-                       Diff : Vector_Prt) 
-    is 
-        task type Minus;
-        task type Plus;
-        tsk_Minus : Minus;
-        tsk_Plus  : Plus;
     
-    -- =====================     
-        task body Minus is
-        
-        begin
-          for I in Vector'Range loop
-              Diff(I) := A(I) - B(I);
-          end loop;
-        end Minus;
-        
-    -- =====================     
-        task body Plus is
-        
-        begin
-          for I in Vector'Range loop
-              Sum(I) := A(I) + B(I);
-          end loop;
-        end Plus;    
-                        
-    -- =====================                         
-    begin
-      null;
-    end SumDiff;
-
    -- ===================================================
    procedure exec_task_01 is
       
-      task type Minus1;
-      task type Plus1;
-      tsk_Minus : Minus1;
-      tsk_Plus  : Plus1;
+      task type tsktyp_01;
+      task type tsktyp_02;
+      the_task_01 : tsktyp_01;
+      the_task_02 : tsktyp_02;
      
      -- =====================     
-        task body Minus1 is
+        task body tsktyp_01 is
         
         begin
          for I in 1..10 loop
-              dtstamp; ATIO.Put_Line("Minus1 here ");
+              dtstamp; ATIO.Put_Line("Running tsktyp_01 ");
               exec_delay_msec (500);
           end loop;
-        end Minus1;
+        end tsktyp_01;
         
     -- =====================     
-        task body Plus1 is
+        task body tsktyp_02 is
         
         begin
          for I in 1..10 loop
-              dtstamp; ATIO.Put_Line("Plus1 here ");
-              exec_delay_msec (500);
+              dtstamp; ATIO.Put_Line("Running tsktyp_02");
+              exec_delay_msec (1_000);
           end loop;
-        end Plus1;    
+        end tsktyp_02;    
                           
       
      

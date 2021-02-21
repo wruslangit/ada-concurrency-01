@@ -15,13 +15,6 @@ is
    package AASU renames Ada.Strings.Unbounded;
   
   -- ======================================================
-   type Vector is array (1..10_000) of Integer;
-   type Vector_Prt is access all Vector;
-   type Vector_Const is access constant Vector; 
-   
-   procedure SumDiff (A, B : Vector_Const;
-                      Sum  : Vector_Prt;
-                      Diff : Vector_Prt);
    
    procedure exec_task_01;
    -- procedure exec_task_02;
